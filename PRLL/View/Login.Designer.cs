@@ -53,9 +53,11 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = SystemColors.ActiveCaption;
+            label1.BorderStyle = BorderStyle.Fixed3D;
+            label1.Font = new Font("Stencil", 10.125F, FontStyle.Italic, GraphicsUnit.Point);
             label1.Location = new Point(78, 167);
             label1.Name = "label1";
-            label1.Size = new Size(80, 32);
+            label1.Size = new Size(107, 34);
             label1.TabIndex = 1;
             label1.Text = "User : ";
             // 
@@ -71,9 +73,11 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = SystemColors.ActiveCaption;
-            label2.Location = new Point(78, 255);
+            label2.BorderStyle = BorderStyle.Fixed3D;
+            label2.Font = new Font("Stencil", 10.125F, FontStyle.Italic, GraphicsUnit.Point);
+            label2.Location = new Point(66, 248);
             label2.Name = "label2";
-            label2.Size = new Size(134, 32);
+            label2.Size = new Size(179, 34);
             label2.TabIndex = 1;
             label2.Text = "PassWord : ";
             // 
@@ -116,7 +120,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.Hinh_anh_12_con_giap_Black_Robot_tuoi_Suu;
+            BackgroundImage = PRL.Properties.Resources.Hinh_anh_12_con_giap_Black_Robot_tuoi_Suu;
             ClientSize = new Size(741, 459);
             Controls.Add(txtPassword);
             Controls.Add(txtUser);
