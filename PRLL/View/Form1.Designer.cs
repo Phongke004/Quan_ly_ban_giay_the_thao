@@ -47,6 +47,10 @@
             button6 = new Button();
             button7 = new Button();
             label9 = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -119,6 +123,10 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(textBox4);
+            groupBox2.Controls.Add(textBox3);
+            groupBox2.Controls.Add(textBox2);
+            groupBox2.Controls.Add(textBox1);
             groupBox2.Controls.Add(button4);
             groupBox2.Controls.Add(button3);
             groupBox2.Controls.Add(button2);
@@ -238,6 +246,34 @@
             label9.TabIndex = 9;
             label9.Text = "Danh Mục Nhân Viên";
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(83, 23);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(201, 27);
+            textBox1.TabIndex = 15;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(83, 59);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(199, 27);
+            textBox2.TabIndex = 16;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(379, 23);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(221, 27);
+            textBox3.TabIndex = 17;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(379, 59);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(221, 27);
+            textBox4.TabIndex = 18;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -277,5 +313,9 @@
         private Label label8;
         private Label label7;
         private Label label9;
+        private TextBox textBox4;
+        private TextBox textBox3;
+        private TextBox textBox2;
+        private TextBox textBox1;
     }
 }
