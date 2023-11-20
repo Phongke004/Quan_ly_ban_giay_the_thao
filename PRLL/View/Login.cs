@@ -16,5 +16,6 @@ namespace PRLL.View
         {
             InitializeComponent();
         }
+
     }
 }
