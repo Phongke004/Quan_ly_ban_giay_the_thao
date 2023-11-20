@@ -36,7 +36,7 @@
             // 
             // txtSearchSDTKH
             // 
-            txtSearchSDTKH.Location = new Point(39, 57);
+            txtSearchSDTKH.Location = new Point(39, 49);
             txtSearchSDTKH.Name = "txtSearchSDTKH";
             txtSearchSDTKH.PlaceholderText = "Vui lòng nhập sdt khách hàng";
             txtSearchSDTKH.Size = new Size(264, 27);
@@ -53,18 +53,18 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(21, 144);
+            dataGridView1.Location = new Point(33, 82);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(1006, 432);
+            dataGridView1.Size = new Size(764, 392);
             dataGridView1.TabIndex = 2;
             // 
             // QLDoiHang
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1048, 613);
+            ClientSize = new Size(823, 543);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
             Controls.Add(txtSearchSDTKH);
