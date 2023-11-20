@@ -32,6 +32,8 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -70,11 +72,31 @@
             label4.TabIndex = 3;
             label4.Text = "label4";
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(260, 104);
+            label5.Name = "label5";
+            label5.Size = new Size(50, 20);
+            label5.TabIndex = 4;
+            label5.Text = "label5";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(246, 194);
+            label6.Name = "label6";
+            label6.Size = new Size(50, 20);
+            label6.TabIndex = 5;
+            label6.Text = "label6";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(932, 570);
+            Controls.Add(label6);
+            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -91,5 +113,7 @@
         private Label label2;
         private Label label3;
         private Label label4;
+        private Label label5;
+        private Label label6;
     }
 }
