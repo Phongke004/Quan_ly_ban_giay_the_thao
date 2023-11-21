@@ -29,31 +29,32 @@
         private void InitializeComponent()
         {
             groupBox2 = new GroupBox();
-            groupBox1 = new GroupBox();
-            groupBox3 = new GroupBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
             button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
+            button4 = new Button();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
+            groupBox1 = new GroupBox();
+            radioButton2 = new RadioButton();
             button9 = new Button();
+            radioButton1 = new RadioButton();
+            button8 = new Button();
+            button7 = new Button();
+            textBox3 = new TextBox();
+            button6 = new Button();
+            textBox5 = new TextBox();
+            textBox2 = new TextBox();
+            textBox4 = new TextBox();
+            textBox1 = new TextBox();
+            label6 = new Label();
+            label3 = new Label();
+            label5 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            groupBox3 = new GroupBox();
             dataGridView1 = new DataGridView();
+            label4 = new Label();
+            label7 = new Label();
             groupBox2.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -74,6 +75,51 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "MENU";
             // 
+            // button5
+            // 
+            button5.Location = new Point(0, 246);
+            button5.Name = "button5";
+            button5.Size = new Size(217, 46);
+            button5.TabIndex = 0;
+            button5.Text = "Quản Lý Nhân Viên";
+            button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(0, 194);
+            button4.Name = "button4";
+            button4.Size = new Size(217, 46);
+            button4.TabIndex = 0;
+            button4.Text = "Quản Lý Đổi Trả";
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(0, 142);
+            button3.Name = "button3";
+            button3.Size = new Size(217, 46);
+            button3.TabIndex = 0;
+            button3.Text = "Quản Lý Khuyến Mãi";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(0, 90);
+            button2.Name = "button2";
+            button2.Size = new Size(217, 46);
+            button2.TabIndex = 0;
+            button2.Text = "Quản Lý Sản Phẩm";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(0, 38);
+            button1.Name = "button1";
+            button1.Size = new Size(217, 46);
+            button1.TabIndex = 0;
+            button1.Text = "Quản Lý Hóa Đơn";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // groupBox1
             // 
             groupBox1.Controls.Add(radioButton2);
@@ -91,6 +137,7 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(label7);
             groupBox1.Controls.Add(label1);
             groupBox1.Location = new Point(241, 102);
             groupBox1.Name = "groupBox1";
@@ -98,117 +145,6 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông Tin Sản Phẩm";
-            // 
-            // groupBox3
-            // 
-            groupBox3.Controls.Add(dataGridView1);
-            groupBox3.Location = new Point(241, 416);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(985, 354);
-            groupBox3.TabIndex = 1;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "Data Sản Phẩm";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(13, 48);
-            label1.Name = "label1";
-            label1.Size = new Size(99, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Mã Sản Phẩm";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(11, 131);
-            label2.Name = "label2";
-            label2.Size = new Size(101, 20);
-            label2.TabIndex = 0;
-            label2.Text = "Tên Sản Phảm";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(40, 214);
-            label3.Name = "label3";
-            label3.Size = new Size(72, 20);
-            label3.TabIndex = 0;
-            label3.Text = "Số Lượng";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Arial", 28.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(427, 29);
-            label4.Name = "label4";
-            label4.Size = new Size(486, 53);
-            label4.TabIndex = 0;
-            label4.Text = "QUẢN LÝ SẢN PHẨM";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(411, 131);
-            label5.Name = "label5";
-            label5.Size = new Size(84, 20);
-            label5.TabIndex = 0;
-            label5.Text = "Ngày Nhập";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(417, 214);
-            label6.Name = "label6";
-            label6.Size = new Size(78, 20);
-            label6.TabIndex = 0;
-            label6.Text = "Trạng Thái";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(118, 48);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(238, 27);
-            textBox1.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(118, 124);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(238, 27);
-            textBox2.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(118, 207);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(238, 27);
-            textBox3.TabIndex = 1;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(501, 45);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(238, 27);
-            textBox4.TabIndex = 1;
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(501, 124);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(238, 27);
-            textBox5.TabIndex = 1;
-            // 
-            // radioButton1
-            // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(501, 212);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(96, 24);
-            radioButton1.TabIndex = 2;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Còn Hàng";
-            radioButton1.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
@@ -221,68 +157,25 @@
             radioButton2.Text = "Hết Hàng";
             radioButton2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // button9
             // 
-            button1.Location = new Point(0, 38);
-            button1.Name = "button1";
-            button1.Size = new Size(217, 46);
-            button1.TabIndex = 0;
-            button1.Text = "Quản Lý Hóa Đơn";
-            button1.UseVisualStyleBackColor = true;
+            button9.Location = new Point(762, 194);
+            button9.Name = "button9";
+            button9.Size = new Size(217, 46);
+            button9.TabIndex = 0;
+            button9.Text = "Show";
+            button9.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // radioButton1
             // 
-            button2.Location = new Point(0, 90);
-            button2.Name = "button2";
-            button2.Size = new Size(217, 46);
-            button2.TabIndex = 0;
-            button2.Text = "Quản Lý Sản Phẩm";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(0, 142);
-            button3.Name = "button3";
-            button3.Size = new Size(217, 46);
-            button3.TabIndex = 0;
-            button3.Text = "Quản Lý Khuyến Mãi";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            button4.Location = new Point(0, 194);
-            button4.Name = "button4";
-            button4.Size = new Size(217, 46);
-            button4.TabIndex = 0;
-            button4.Text = "Quản Lý Đổi Trả";
-            button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            button5.Location = new Point(0, 246);
-            button5.Name = "button5";
-            button5.Size = new Size(217, 46);
-            button5.TabIndex = 0;
-            button5.Text = "Quản Lý Nhân Viên";
-            button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            button6.Location = new Point(762, 38);
-            button6.Name = "button6";
-            button6.Size = new Size(217, 46);
-            button6.TabIndex = 0;
-            button6.Text = "Thêm";
-            button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            button7.Location = new Point(762, 90);
-            button7.Name = "button7";
-            button7.Size = new Size(217, 46);
-            button7.TabIndex = 0;
-            button7.Text = "Sửa";
-            button7.UseVisualStyleBackColor = true;
+            radioButton1.AutoSize = true;
+            radioButton1.Location = new Point(501, 212);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(96, 24);
+            radioButton1.TabIndex = 2;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "Còn Hàng";
+            radioButton1.UseVisualStyleBackColor = true;
             // 
             // button8
             // 
@@ -293,14 +186,113 @@
             button8.Text = "Xóa";
             button8.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // button7
             // 
-            button9.Location = new Point(762, 194);
-            button9.Name = "button9";
-            button9.Size = new Size(217, 46);
-            button9.TabIndex = 0;
-            button9.Text = "Show";
-            button9.UseVisualStyleBackColor = true;
+            button7.Location = new Point(762, 90);
+            button7.Name = "button7";
+            button7.Size = new Size(217, 46);
+            button7.TabIndex = 0;
+            button7.Text = "Sửa";
+            button7.UseVisualStyleBackColor = true;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(118, 207);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(238, 27);
+            textBox3.TabIndex = 1;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(762, 38);
+            button6.Name = "button6";
+            button6.Size = new Size(217, 46);
+            button6.TabIndex = 0;
+            button6.Text = "Thêm";
+            button6.UseVisualStyleBackColor = true;
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(501, 124);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(238, 27);
+            textBox5.TabIndex = 1;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(118, 124);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(238, 27);
+            textBox2.TabIndex = 1;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(501, 45);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(238, 27);
+            textBox4.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(118, 48);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(238, 27);
+            textBox1.TabIndex = 1;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(417, 214);
+            label6.Name = "label6";
+            label6.Size = new Size(78, 20);
+            label6.TabIndex = 0;
+            label6.Text = "Trạng Thái";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(40, 214);
+            label3.Name = "label3";
+            label3.Size = new Size(72, 20);
+            label3.TabIndex = 0;
+            label3.Text = "Số Lượng";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(411, 131);
+            label5.Name = "label5";
+            label5.Size = new Size(84, 20);
+            label5.TabIndex = 0;
+            label5.Text = "Ngày Nhập";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(11, 131);
+            label2.Name = "label2";
+            label2.Size = new Size(101, 20);
+            label2.TabIndex = 0;
+            label2.Text = "Tên Sản Phảm";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(13, 48);
+            label1.Name = "label1";
+            label1.Size = new Size(99, 20);
+            label1.TabIndex = 0;
+            label1.Text = "Mã Sản Phẩm";
+            // 
+            // groupBox3
+            // 
+            groupBox3.Controls.Add(dataGridView1);
+            groupBox3.Location = new Point(241, 416);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(985, 354);
+            groupBox3.TabIndex = 1;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Data Sản Phẩm";
             // 
             // dataGridView1
             // 
@@ -311,6 +303,25 @@
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.Size = new Size(966, 322);
             dataGridView1.TabIndex = 0;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Arial", 28.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(427, 29);
+            label4.Name = "label4";
+            label4.Size = new Size(486, 53);
+            label4.TabIndex = 0;
+            label4.Text = "QUẢN LÝ SẢN PHẨM";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(375, 48);
+            label7.Name = "label7";
+            label7.Size = new Size(120, 20);
+            label7.TabIndex = 0;
+            label7.Text = "Mã Thương Hiệu";
             // 
             // QLSanPham
             // 
@@ -360,5 +371,6 @@
         private Button button7;
         private Button button6;
         private DataGridView dataGridView1;
+        private Label label7;
     }
 }
