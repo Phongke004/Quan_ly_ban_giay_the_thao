@@ -29,19 +29,21 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            label1 = new Label();
-            label2 = new Label();
-            txtMaHD = new TextBox();
-            label3 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            txtMaKH = new TextBox();
             dtpkNgayTao = new DateTimePicker();
             txtMaNV = new TextBox();
+            txtMaKH = new TextBox();
+            txtMaHD = new TextBox();
+            label5 = new Label();
+            label6 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
             groupBox2 = new GroupBox();
+            comboBox1 = new ComboBox();
             cbbGiamgia = new ComboBox();
             txtTongTien = new TextBox();
             txtMaSp = new TextBox();
+            txtDonGia = new TextBox();
             txtTenSp = new TextBox();
             label8 = new Label();
             label9 = new Label();
@@ -56,8 +58,7 @@
             btnInHoaDon = new Button();
             label4 = new Label();
             txtThanhtien = new TextBox();
-            comboBox1 = new ComboBox();
-            txtDonGia = new TextBox();
+            btnDangXuat = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtgview).BeginInit();
@@ -80,27 +81,26 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin chung";
             // 
-            // label1
+            // dtpkNgayTao
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.PaleTurquoise;
-            label1.BorderStyle = BorderStyle.FixedSingle;
-            label1.Font = new Font("Showcard Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.Red;
-            label1.Location = new Point(576, 21);
-            label1.Name = "label1";
-            label1.Size = new Size(482, 62);
-            label1.TabIndex = 1;
-            label1.Text = "Hóa đơn bán hàng";
+            dtpkNgayTao.Location = new Point(279, 111);
+            dtpkNgayTao.Name = "dtpkNgayTao";
+            dtpkNgayTao.Size = new Size(495, 39);
+            dtpkNgayTao.TabIndex = 2;
             // 
-            // label2
+            // txtMaNV
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(22, 45);
-            label2.Name = "label2";
-            label2.Size = new Size(156, 32);
-            label2.TabIndex = 0;
-            label2.Text = "Mã hóa đơn :";
+            txtMaNV.Location = new Point(1159, 116);
+            txtMaNV.Name = "txtMaNV";
+            txtMaNV.Size = new Size(495, 39);
+            txtMaNV.TabIndex = 1;
+            // 
+            // txtMaKH
+            // 
+            txtMaKH.Location = new Point(1159, 45);
+            txtMaKH.Name = "txtMaKH";
+            txtMaKH.Size = new Size(495, 39);
+            txtMaKH.TabIndex = 1;
             // 
             // txtMaHD
             // 
@@ -108,15 +108,6 @@
             txtMaHD.Name = "txtMaHD";
             txtMaHD.Size = new Size(495, 39);
             txtMaHD.TabIndex = 1;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(22, 116);
-            label3.Name = "label3";
-            label3.Size = new Size(130, 32);
-            label3.TabIndex = 0;
-            label3.Text = "Ngày tạo : ";
             // 
             // label5
             // 
@@ -136,26 +127,36 @@
             label6.TabIndex = 0;
             label6.Text = "Mã khách hàng : ";
             // 
-            // txtMaKH
+            // label3
             // 
-            txtMaKH.Location = new Point(1159, 45);
-            txtMaKH.Name = "txtMaKH";
-            txtMaKH.Size = new Size(495, 39);
-            txtMaKH.TabIndex = 1;
+            label3.AutoSize = true;
+            label3.Location = new Point(22, 116);
+            label3.Name = "label3";
+            label3.Size = new Size(130, 32);
+            label3.TabIndex = 0;
+            label3.Text = "Ngày tạo : ";
             // 
-            // dtpkNgayTao
+            // label2
             // 
-            dtpkNgayTao.Location = new Point(279, 111);
-            dtpkNgayTao.Name = "dtpkNgayTao";
-            dtpkNgayTao.Size = new Size(495, 39);
-            dtpkNgayTao.TabIndex = 2;
+            label2.AutoSize = true;
+            label2.Location = new Point(22, 45);
+            label2.Name = "label2";
+            label2.Size = new Size(156, 32);
+            label2.TabIndex = 0;
+            label2.Text = "Mã hóa đơn :";
             // 
-            // txtMaNV
+            // label1
             // 
-            txtMaNV.Location = new Point(1159, 116);
-            txtMaNV.Name = "txtMaNV";
-            txtMaNV.Size = new Size(495, 39);
-            txtMaNV.TabIndex = 1;
+            label1.AutoSize = true;
+            label1.BackColor = Color.PaleTurquoise;
+            label1.BorderStyle = BorderStyle.FixedSingle;
+            label1.Font = new Font("Showcard Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.Red;
+            label1.Location = new Point(576, 21);
+            label1.Name = "label1";
+            label1.Size = new Size(482, 62);
+            label1.TabIndex = 1;
+            label1.Text = "Hóa đơn bán hàng";
             // 
             // groupBox2
             // 
@@ -178,6 +179,14 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Thông tin mặt hàng :";
             // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(280, 106);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(497, 40);
+            comboBox1.TabIndex = 4;
+            // 
             // cbbGiamgia
             // 
             cbbGiamgia.FormattingEnabled = true;
@@ -199,6 +208,13 @@
             txtMaSp.Name = "txtMaSp";
             txtMaSp.Size = new Size(495, 39);
             txtMaSp.TabIndex = 1;
+            // 
+            // txtDonGia
+            // 
+            txtDonGia.Location = new Point(282, 166);
+            txtDonGia.Name = "txtDonGia";
+            txtDonGia.Size = new Size(495, 39);
+            txtDonGia.TabIndex = 1;
             // 
             // txtTenSp
             // 
@@ -324,26 +340,22 @@
             txtThanhtien.Size = new Size(495, 39);
             txtThanhtien.TabIndex = 1;
             // 
-            // comboBox1
+            // btnDangXuat
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(280, 106);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(497, 40);
-            comboBox1.TabIndex = 4;
-            // 
-            // txtDonGia
-            // 
-            txtDonGia.Location = new Point(282, 166);
-            txtDonGia.Name = "txtDonGia";
-            txtDonGia.Size = new Size(495, 39);
-            txtDonGia.TabIndex = 1;
+            btnDangXuat.Location = new Point(1464, 919);
+            btnDangXuat.Name = "btnDangXuat";
+            btnDangXuat.Size = new Size(193, 46);
+            btnDangXuat.TabIndex = 3;
+            btnDangXuat.Text = "Đăng Xuất";
+            btnDangXuat.UseVisualStyleBackColor = true;
+            btnDangXuat.Click += btnDangXuat_Click;
             // 
             // HoaDon
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1761, 990);
+            Controls.Add(btnDangXuat);
             Controls.Add(btnInHoaDon);
             Controls.Add(btnXoa);
             Controls.Add(btnSua);
@@ -356,6 +368,8 @@
             Controls.Add(groupBox1);
             Name = "HoaDon";
             Text = "HoaDon";
+            FormClosing += HoaDon_FormClosing;
+            FormClosed += HoaDon_FormClosed;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
@@ -397,5 +411,6 @@
         private TextBox txtThanhtien;
         private ComboBox comboBox1;
         private TextBox txtDonGia;
+        private Button btnDangXuat;
     }
 }

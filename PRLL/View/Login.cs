@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PRL.View;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,26 @@ namespace PRLL.View
         public Login()
         {
             InitializeComponent();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            HoaDon hd = new HoaDon();
+            hd.Show();
+            this.Hide();
+            hd.logOut += Hd_logOut;
+        }
+
+        private void Hd_logOut(object? sender, EventArgs e)
+        {
+            (sender as HoaDon).isExit = false; //Không tắt chương trình chỉ đăng xuất
+            (sender as HoaDon).Close();
+            this.Show();
+        }
+
+        private void Login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
