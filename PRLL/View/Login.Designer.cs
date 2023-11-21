@@ -39,6 +39,12 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = SystemColors.ActiveCaption;
+            label1.BorderStyle = BorderStyle.Fixed3D;
+            label1.Font = new Font("Stencil", 10.125F, FontStyle.Italic, GraphicsUnit.Point);
+            label1.Location = new Point(78, 167);
+            label1.Name = "label1";
+            label1.Size = new Size(107, 34);
             label1.BackColor = SystemColors.ButtonFace;
             label1.Location = new Point(48, 88);
             label1.Margin = new Padding(2, 0, 2, 0);
@@ -59,6 +65,12 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = SystemColors.ActiveCaption;
+            label2.BorderStyle = BorderStyle.Fixed3D;
+            label2.Font = new Font("Stencil", 10.125F, FontStyle.Italic, GraphicsUnit.Point);
+            label2.Location = new Point(66, 248);
+            label2.Name = "label2";
+            label2.Size = new Size(179, 34);
             label2.BackColor = SystemColors.ButtonFace;
             label2.Location = new Point(48, 135);
             label2.Margin = new Padding(2, 0, 2, 0);
@@ -105,12 +117,12 @@
             btnLogin.TabIndex = 0;
             btnLogin.Text = "Đặng nhập";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-
             ClientSize = new Size(741, 459);
 
             Controls.Add(txtPassword);
@@ -122,6 +134,7 @@
             Margin = new Padding(2);
             Name = "Login";
             Text = "Login";
+            FormClosed += Login_FormClosed;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -133,5 +146,13 @@
         private TextBox txtPassword;
         private Label label3;
         private Button btnLogin;
+    }
+}
+
+namespace PRL
+{
+    class Resources
+    {
+        public static Image Hinh_anh_12_con_giap_Black_Robot_tuoi_Suu { get; internal set; }
     }
 }
