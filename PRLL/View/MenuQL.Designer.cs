@@ -28,45 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menuStrip1 = new MenuStrip();
-            quảnLýNhânViênToolStripMenuItem = new ToolStripMenuItem();
-            menuStrip1.SuspendLayout();
             SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            menuStrip1.ImageScalingSize = new Size(32, 32);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { quảnLýNhânViênToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1572, 40);
-            menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "menuStrip1";
-            // 
-            // quảnLýNhânViênToolStripMenuItem
-            // 
-            quảnLýNhânViênToolStripMenuItem.Name = "quảnLýNhânViênToolStripMenuItem";
-            quảnLýNhânViênToolStripMenuItem.Size = new Size(230, 36);
-            quảnLýNhânViênToolStripMenuItem.Text = "Quản lý nhân viên";
             // 
             // MenuQL
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1572, 804);
-            Controls.Add(menuStrip1);
-            MainMenuStrip = menuStrip1;
+            ClientSize = new Size(967, 502);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "MenuQL";
             Text = "MenuQL";
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem quảnLýNhânViênToolStripMenuItem;
     }
 }

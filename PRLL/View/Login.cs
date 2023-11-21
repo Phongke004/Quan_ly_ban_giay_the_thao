@@ -17,7 +17,6 @@ namespace PRLL.View
         {
             InitializeComponent();
         }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             HoaDon hd = new HoaDon();
@@ -37,5 +36,6 @@ namespace PRLL.View
         {
             Application.Exit();
         }
+
     }
 }
