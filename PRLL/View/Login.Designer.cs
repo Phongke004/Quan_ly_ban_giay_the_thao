@@ -116,7 +116,6 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.Hinh_anh_12_con_giap_Black_Robot_tuoi_Suu;
             ClientSize = new Size(741, 459);
             Controls.Add(txtPassword);
             Controls.Add(txtUser);
