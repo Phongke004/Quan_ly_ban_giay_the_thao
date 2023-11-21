@@ -42,7 +42,6 @@
             button7 = new Button();
             textBox3 = new TextBox();
             button6 = new Button();
-            textBox5 = new TextBox();
             textBox2 = new TextBox();
             textBox4 = new TextBox();
             textBox1 = new TextBox();
@@ -55,6 +54,7 @@
             dataGridView1 = new DataGridView();
             label4 = new Label();
             label7 = new Label();
+            dateTimePicker1 = new DateTimePicker();
             groupBox2.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -68,7 +68,7 @@
             groupBox2.Controls.Add(button3);
             groupBox2.Controls.Add(button2);
             groupBox2.Controls.Add(button1);
-            groupBox2.Location = new Point(12, 102);
+            groupBox2.Location = new Point(12, 80);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(223, 668);
             groupBox2.TabIndex = 0;
@@ -122,6 +122,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(dateTimePicker1);
             groupBox1.Controls.Add(radioButton2);
             groupBox1.Controls.Add(button9);
             groupBox1.Controls.Add(radioButton1);
@@ -129,7 +130,6 @@
             groupBox1.Controls.Add(button7);
             groupBox1.Controls.Add(textBox3);
             groupBox1.Controls.Add(button6);
-            groupBox1.Controls.Add(textBox5);
             groupBox1.Controls.Add(textBox2);
             groupBox1.Controls.Add(textBox4);
             groupBox1.Controls.Add(textBox1);
@@ -139,7 +139,7 @@
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label7);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(241, 102);
+            groupBox1.Location = new Point(241, 80);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(985, 308);
             groupBox1.TabIndex = 0;
@@ -211,13 +211,6 @@
             button6.Text = "Thêm";
             button6.UseVisualStyleBackColor = true;
             // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(501, 124);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(238, 27);
-            textBox5.TabIndex = 1;
-            // 
             // textBox2
             // 
             textBox2.Location = new Point(118, 124);
@@ -287,7 +280,7 @@
             // groupBox3
             // 
             groupBox3.Controls.Add(dataGridView1);
-            groupBox3.Location = new Point(241, 416);
+            groupBox3.Location = new Point(241, 394);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(985, 354);
             groupBox3.TabIndex = 1;
@@ -308,7 +301,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Arial", 28.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(427, 29);
+            label4.Location = new Point(359, 9);
             label4.Name = "label4";
             label4.Size = new Size(486, 53);
             label4.TabIndex = 0;
@@ -322,6 +315,14 @@
             label7.Size = new Size(120, 20);
             label7.TabIndex = 0;
             label7.Text = "Mã Thương Hiệu";
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Format = DateTimePickerFormat.Short;
+            dateTimePicker1.Location = new Point(501, 131);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(238, 27);
+            dateTimePicker1.TabIndex = 3;
             // 
             // QLSanPham
             // 
@@ -355,7 +356,6 @@
         private RadioButton radioButton2;
         private RadioButton radioButton1;
         private TextBox textBox3;
-        private TextBox textBox5;
         private TextBox textBox2;
         private TextBox textBox4;
         private TextBox textBox1;
@@ -372,5 +372,6 @@
         private Button button6;
         private DataGridView dataGridView1;
         private Label label7;
+        private DateTimePicker dateTimePicker1;
     }
 }
