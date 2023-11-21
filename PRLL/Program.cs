@@ -1,3 +1,5 @@
+using PRL.View;
+
 namespace PRLL
 {
     internal static class Program
