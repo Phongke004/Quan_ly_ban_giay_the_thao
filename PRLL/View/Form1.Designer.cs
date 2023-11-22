@@ -41,10 +41,12 @@
             button6 = new Button();
             button5 = new Button();
             groupBox2 = new GroupBox();
-            radioButton4 = new RadioButton();
+            panel2 = new Panel();
             radioButton3 = new RadioButton();
-            radioButton2 = new RadioButton();
+            radioButton4 = new RadioButton();
+            panel1 = new Panel();
             radioButton1 = new RadioButton();
+            radioButton2 = new RadioButton();
             dateTimePicker1 = new DateTimePicker();
             textBox6 = new TextBox();
             textBox5 = new TextBox();
@@ -64,6 +66,8 @@
             label9 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
+            panel2.SuspendLayout();
+            panel1.SuspendLayout();
             groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -183,10 +187,8 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(radioButton4);
-            groupBox2.Controls.Add(radioButton3);
-            groupBox2.Controls.Add(radioButton2);
-            groupBox2.Controls.Add(radioButton1);
+            groupBox2.Controls.Add(panel2);
+            groupBox2.Controls.Add(panel1);
             groupBox2.Controls.Add(dateTimePicker1);
             groupBox2.Controls.Add(textBox6);
             groupBox2.Controls.Add(textBox5);
@@ -214,49 +216,67 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Thông tin nhân viên";
             // 
-            // radioButton4
+            // panel2
             // 
-            radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(207, 179);
-            radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(146, 24);
-            radioButton4.TabIndex = 26;
-            radioButton4.TabStop = true;
-            radioButton4.Text = "Không hoạt động";
-            radioButton4.UseVisualStyleBackColor = true;
+            panel2.Controls.Add(radioButton3);
+            panel2.Controls.Add(radioButton4);
+            panel2.Location = new Point(83, 181);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(201, 38);
+            panel2.TabIndex = 28;
             // 
             // radioButton3
             // 
             radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(99, 179);
+            radioButton3.Location = new Point(16, 11);
             radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(102, 24);
+            radioButton3.Size = new Size(74, 24);
             radioButton3.TabIndex = 25;
             radioButton3.TabStop = true;
-            radioButton3.Text = "Hoạt động";
+            radioButton3.Text = "Passed";
             radioButton3.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radioButton4
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(199, 137);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(50, 24);
-            radioButton2.TabIndex = 24;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Nữ";
-            radioButton2.UseVisualStyleBackColor = true;
+            radioButton4.AutoSize = true;
+            radioButton4.Location = new Point(133, 11);
+            radioButton4.Name = "radioButton4";
+            radioButton4.Size = new Size(52, 24);
+            radioButton4.TabIndex = 26;
+            radioButton4.TabStop = true;
+            radioButton4.Text = "Fail";
+            radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(radioButton1);
+            panel1.Controls.Add(radioButton2);
+            panel1.Location = new Point(83, 132);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(199, 38);
+            panel1.TabIndex = 27;
             // 
             // radioButton1
             // 
             radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(113, 137);
+            radioButton1.Location = new Point(16, 11);
             radioButton1.Name = "radioButton1";
             radioButton1.Size = new Size(62, 24);
             radioButton1.TabIndex = 23;
             radioButton1.TabStop = true;
             radioButton1.Text = "Nam";
             radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Location = new Point(135, 11);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(50, 24);
+            radioButton2.TabIndex = 24;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "Nữ";
+            radioButton2.UseVisualStyleBackColor = true;
             // 
             // dateTimePicker1
             // 
@@ -283,7 +303,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(18, 181);
+            label10.Location = new Point(8, 181);
             label10.Name = "label10";
             label10.Size = new Size(75, 20);
             label10.TabIndex = 19;
@@ -415,6 +435,10 @@
             groupBox1.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
@@ -457,5 +481,7 @@
         private DataGridView dataGridView1;
         private Button button9;
         private Button button8;
+        private Panel panel2;
+        private Panel panel1;
     }
 }
