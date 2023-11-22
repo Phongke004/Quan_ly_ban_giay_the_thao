@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace PRL.View
 {
-    public partial class QLDoiHang : Form
+    public partial class DoiMatKhau : Form
     {
-        public QLDoiHang()
+        public DoiMatKhau()
         {
             InitializeComponent();
         }
-
-
     }
 }
