@@ -22,9 +22,9 @@ namespace BUS.Services
            return _doiTraReps.GetHoaDonChiTiet();
         }
 
-        public List<HoaDon> GetHoaDons()
+        public List<HoaDon> GetHoaDons(string find)
         {
-         return _doiTraReps.GetHoaDons();
+         return _doiTraReps.GetHoaDons(find);
         }
     }
 }

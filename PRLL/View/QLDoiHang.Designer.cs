@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             Button button1;
-            txtSearchSDTKH = new TextBox();
+            txtSearch = new TextBox();
             label1 = new Label();
             btnDoiTra = new Label();
             gbMenu = new GroupBox();
@@ -42,10 +42,7 @@
             lb_thongtinhoadon = new ListBox();
             groupBox2 = new GroupBox();
             btn_Tra = new Button();
-            label3 = new Label();
             label2 = new Label();
-            rdb_Tra = new RadioButton();
-            rdb_Doi = new RadioButton();
             textBox1 = new TextBox();
             btn_Doi = new Button();
             txtSoLuongDoi = new TextBox();
@@ -73,13 +70,13 @@
             button1.Text = "Quản lý Đổi Trả";
             button1.UseVisualStyleBackColor = true;
             // 
-            // txtSearchSDTKH
+            // txtSearch
             // 
-            txtSearchSDTKH.Location = new Point(22, 42);
-            txtSearchSDTKH.Name = "txtSearchSDTKH";
-            txtSearchSDTKH.PlaceholderText = "Vui lòng nhập mã hóa đơn";
-            txtSearchSDTKH.Size = new Size(367, 27);
-            txtSearchSDTKH.TabIndex = 0;
+            txtSearch.Location = new Point(22, 42);
+            txtSearch.Name = "txtSearch";
+            txtSearch.PlaceholderText = "Vui lòng nhập mã hóa đơn";
+            txtSearch.Size = new Size(367, 27);
+            txtSearch.TabIndex = 0;
             // 
             // label1
             // 
@@ -154,7 +151,7 @@
             // 
             groupBox1.Controls.Add(hoadon);
             groupBox1.Controls.Add(lb_thongtinhoadon);
-            groupBox1.Controls.Add(txtSearchSDTKH);
+            groupBox1.Controls.Add(txtSearch);
             groupBox1.Location = new Point(286, 62);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(415, 293);
@@ -170,6 +167,7 @@
             hoadon.Name = "hoadon";
             hoadon.Size = new Size(367, 184);
             hoadon.TabIndex = 2;
+            hoadon.SelectedIndexChanged += hoadon_SelectedIndexChanged;
             // 
             // lb_thongtinhoadon
             // 
@@ -183,10 +181,7 @@
             // groupBox2
             // 
             groupBox2.Controls.Add(btn_Tra);
-            groupBox2.Controls.Add(label3);
             groupBox2.Controls.Add(label2);
-            groupBox2.Controls.Add(rdb_Tra);
-            groupBox2.Controls.Add(rdb_Doi);
             groupBox2.Controls.Add(textBox1);
             groupBox2.Controls.Add(btn_Doi);
             groupBox2.Controls.Add(txtSoLuongDoi);
@@ -202,21 +197,12 @@
             // 
             // btn_Tra
             // 
-            btn_Tra.Location = new Point(187, 228);
+            btn_Tra.Location = new Point(219, 198);
             btn_Tra.Name = "btn_Tra";
             btn_Tra.Size = new Size(106, 43);
             btn_Tra.TabIndex = 15;
             btn_Tra.Text = "Trả";
             btn_Tra.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(19, 182);
-            label3.Name = "label3";
-            label3.Size = new Size(73, 20);
-            label3.TabIndex = 14;
-            label3.Text = "Hình thức";
             // 
             // label2
             // 
@@ -227,28 +213,6 @@
             label2.TabIndex = 13;
             label2.Text = "Giá";
             // 
-            // rdb_Tra
-            // 
-            rdb_Tra.AutoSize = true;
-            rdb_Tra.Location = new Point(272, 182);
-            rdb_Tra.Name = "rdb_Tra";
-            rdb_Tra.Size = new Size(50, 24);
-            rdb_Tra.TabIndex = 12;
-            rdb_Tra.TabStop = true;
-            rdb_Tra.Text = "Trả";
-            rdb_Tra.UseVisualStyleBackColor = true;
-            // 
-            // rdb_Doi
-            // 
-            rdb_Doi.AutoSize = true;
-            rdb_Doi.Location = new Point(124, 182);
-            rdb_Doi.Name = "rdb_Doi";
-            rdb_Doi.Size = new Size(58, 24);
-            rdb_Doi.TabIndex = 11;
-            rdb_Doi.TabStop = true;
-            rdb_Doi.Text = "Đổi ";
-            rdb_Doi.UseVisualStyleBackColor = true;
-            // 
             // textBox1
             // 
             textBox1.Location = new Point(123, 126);
@@ -258,7 +222,7 @@
             // 
             // btn_Doi
             // 
-            btn_Doi.Location = new Point(44, 228);
+            btn_Doi.Location = new Point(64, 198);
             btn_Doi.Name = "btn_Doi";
             btn_Doi.Size = new Size(106, 43);
             btn_Doi.TabIndex = 9;
@@ -364,7 +328,7 @@
 
         #endregion
 
-        private TextBox txtSearchSDTKH;
+        private TextBox txtSearch;
         private Label label1;
         private Label btnDoiTra;
         private GroupBox gbMenu;
@@ -385,10 +349,7 @@
         private Button btnQLNhanVien;
         private ListBox hoadon;
         private ListBox lb_thongtinhoadon;
-        private Label label3;
         private Label label2;
-        private RadioButton rdb_Tra;
-        private RadioButton rdb_Doi;
         private TextBox textBox1;
         private Button btn_Tra;
         private Label label4;

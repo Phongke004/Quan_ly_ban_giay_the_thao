@@ -8,7 +8,7 @@ namespace BUS.IServiecs
 {
     public interface IDoiTraSv
     {
-        public List<HoaDon> GetHoaDons();
+        public List<HoaDon> GetHoaDons(string find);
         public List<HoaDonChiTiet> GetHoaDonChiTiet();
     }
 }
