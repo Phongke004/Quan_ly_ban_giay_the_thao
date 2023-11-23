@@ -16,7 +16,7 @@ namespace PRLL
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             //Application.Run(new Login());
-            Application.Run(new QuanLyKH());
+            Application.Run(new Login());
 
         }
     }

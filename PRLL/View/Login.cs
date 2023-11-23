@@ -19,10 +19,10 @@ namespace PRLL.View
         }
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            HoaDon hd = new HoaDon();
-            hd.Show();
-            this.Hide();
-            hd.logOut += Hd_logOut;
+            string userName = txtUser.Text;
+            MenuQL menuQl = new MenuQL(userName);
+            menuQl.ShowDialog();
+
         }
 
         private void Hd_logOut(object? sender, EventArgs e)
@@ -36,6 +36,5 @@ namespace PRLL.View
         {
             Application.Exit();
         }
-
     }
 }
