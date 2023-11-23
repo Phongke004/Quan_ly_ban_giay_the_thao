@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PRL.View
 {
-    public partial class QuanlyNV : Form
+    public partial class DoiMatKhau : Form
     {
-        public QuanlyNV()
+        public DoiMatKhau()
         {
             InitializeComponent();
         }
