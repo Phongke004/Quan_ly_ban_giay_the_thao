@@ -38,27 +38,23 @@
             btnQLSanPham = new Button();
             btnQLHoaDon = new Button();
             groupBox1 = new GroupBox();
-            hoadon = new ListBox();
-            lb_thongtinhoadon = new ListBox();
-            groupBox2 = new GroupBox();
-            btn_Tra = new Button();
-            label2 = new Label();
-            textBox1 = new TextBox();
-            btn_Doi = new Button();
-            txtSoLuongDoi = new TextBox();
-            txtMaSP = new TextBox();
-            label7 = new Label();
-            label6 = new Label();
             groupBox3 = new GroupBox();
             dgv_DoiTra = new DataGridView();
             btn_Exits = new Button();
             label4 = new Label();
+            btn_Xem = new Button();
+            groupBox2 = new GroupBox();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            label2 = new Label();
+            label3 = new Label();
+            btnAdd = new Button();
             button1 = new Button();
             gbMenu.SuspendLayout();
             groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_DoiTra).BeginInit();
+            groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // button1
@@ -75,8 +71,9 @@
             txtSearch.Location = new Point(22, 42);
             txtSearch.Name = "txtSearch";
             txtSearch.PlaceholderText = "Vui lòng nhập mã hóa đơn";
-            txtSearch.Size = new Size(367, 27);
+            txtSearch.Size = new Size(292, 27);
             txtSearch.TabIndex = 0;
+            txtSearch.TextChanged += txtSearch_TextChanged;
             // 
             // label1
             // 
@@ -119,6 +116,7 @@
             btnQLNhanVien.TabIndex = 11;
             btnQLNhanVien.Text = "Quản lý Nhân Viên";
             btnQLNhanVien.UseVisualStyleBackColor = true;
+            btnQLNhanVien.Click += btnQLNhanVien_Click;
             // 
             // btnKhuyenMai
             // 
@@ -128,6 +126,7 @@
             btnKhuyenMai.TabIndex = 2;
             btnKhuyenMai.Text = "Quản lý Khuyến Mại";
             btnKhuyenMai.UseVisualStyleBackColor = true;
+            btnKhuyenMai.Click += btnKhuyenMai_Click;
             // 
             // btnQLSanPham
             // 
@@ -137,6 +136,7 @@
             btnQLSanPham.TabIndex = 1;
             btnQLSanPham.Text = "Quản lý Sản Phẩm";
             btnQLSanPham.UseVisualStyleBackColor = true;
+            btnQLSanPham.Click += btnQLSanPham_Click;
             // 
             // btnQLHoaDon
             // 
@@ -146,127 +146,24 @@
             btnQLHoaDon.TabIndex = 0;
             btnQLHoaDon.Text = "Quản lý Hóa Đơn";
             btnQLHoaDon.UseVisualStyleBackColor = true;
+            btnQLHoaDon.Click += btnQLHoaDon_Click;
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(hoadon);
-            groupBox1.Controls.Add(lb_thongtinhoadon);
             groupBox1.Controls.Add(txtSearch);
             groupBox1.Location = new Point(286, 62);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(415, 293);
+            groupBox1.Size = new Size(341, 186);
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin hóa đơn";
             // 
-            // hoadon
-            // 
-            hoadon.FormattingEnabled = true;
-            hoadon.ItemHeight = 20;
-            hoadon.Location = new Point(22, 82);
-            hoadon.Name = "hoadon";
-            hoadon.Size = new Size(367, 184);
-            hoadon.TabIndex = 2;
-            hoadon.SelectedIndexChanged += hoadon_SelectedIndexChanged;
-            // 
-            // lb_thongtinhoadon
-            // 
-            lb_thongtinhoadon.FormattingEnabled = true;
-            lb_thongtinhoadon.ItemHeight = 20;
-            lb_thongtinhoadon.Location = new Point(528, 87);
-            lb_thongtinhoadon.Name = "lb_thongtinhoadon";
-            lb_thongtinhoadon.Size = new Size(367, 184);
-            lb_thongtinhoadon.TabIndex = 1;
-            // 
-            // groupBox2
-            // 
-            groupBox2.Controls.Add(btn_Tra);
-            groupBox2.Controls.Add(label2);
-            groupBox2.Controls.Add(textBox1);
-            groupBox2.Controls.Add(btn_Doi);
-            groupBox2.Controls.Add(txtSoLuongDoi);
-            groupBox2.Controls.Add(txtMaSP);
-            groupBox2.Controls.Add(label7);
-            groupBox2.Controls.Add(label6);
-            groupBox2.Location = new Point(720, 62);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(410, 293);
-            groupBox2.TabIndex = 7;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Sản phẩm";
-            // 
-            // btn_Tra
-            // 
-            btn_Tra.Location = new Point(219, 198);
-            btn_Tra.Name = "btn_Tra";
-            btn_Tra.Size = new Size(106, 43);
-            btn_Tra.TabIndex = 15;
-            btn_Tra.Text = "Trả";
-            btn_Tra.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(19, 133);
-            label2.Name = "label2";
-            label2.Size = new Size(31, 20);
-            label2.TabIndex = 13;
-            label2.Text = "Giá";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(123, 126);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(199, 27);
-            textBox1.TabIndex = 10;
-            // 
-            // btn_Doi
-            // 
-            btn_Doi.Location = new Point(64, 198);
-            btn_Doi.Name = "btn_Doi";
-            btn_Doi.Size = new Size(106, 43);
-            btn_Doi.TabIndex = 9;
-            btn_Doi.Text = "Đổi";
-            btn_Doi.UseVisualStyleBackColor = true;
-            // 
-            // txtSoLuongDoi
-            // 
-            txtSoLuongDoi.Location = new Point(123, 80);
-            txtSoLuongDoi.Name = "txtSoLuongDoi";
-            txtSoLuongDoi.Size = new Size(199, 27);
-            txtSoLuongDoi.TabIndex = 8;
-            // 
-            // txtMaSP
-            // 
-            txtMaSP.Location = new Point(123, 35);
-            txtMaSP.Name = "txtMaSP";
-            txtMaSP.Size = new Size(199, 27);
-            txtMaSP.TabIndex = 7;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(19, 87);
-            label7.Name = "label7";
-            label7.Size = new Size(69, 20);
-            label7.TabIndex = 1;
-            label7.Text = "Số lượng";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(19, 42);
-            label6.Name = "label6";
-            label6.Size = new Size(98, 20);
-            label6.TabIndex = 0;
-            label6.Text = "Mã sản phẩm";
-            // 
             // groupBox3
             // 
             groupBox3.Controls.Add(dgv_DoiTra);
-            groupBox3.Location = new Point(292, 361);
+            groupBox3.Location = new Point(286, 254);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(813, 330);
+            groupBox3.Size = new Size(813, 433);
             groupBox3.TabIndex = 8;
             groupBox3.TabStop = false;
             groupBox3.Text = "Danh Sách Hóa Đơn";
@@ -278,7 +175,7 @@
             dgv_DoiTra.Name = "dgv_DoiTra";
             dgv_DoiTra.RowHeadersWidth = 51;
             dgv_DoiTra.RowTemplate.Height = 29;
-            dgv_DoiTra.Size = new Size(748, 247);
+            dgv_DoiTra.Size = new Size(748, 359);
             dgv_DoiTra.TabIndex = 0;
             // 
             // btn_Exits
@@ -287,27 +184,94 @@
             btn_Exits.Name = "btn_Exits";
             btn_Exits.Size = new Size(94, 46);
             btn_Exits.TabIndex = 9;
-            btn_Exits.Text = "Exits";
+            btn_Exits.Text = "Thoát";
             btn_Exits.UseVisualStyleBackColor = true;
+            btn_Exits.Click += btn_Exits_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(939, 26);
+            label4.Location = new Point(912, 9);
             label4.Name = "label4";
             label4.Size = new Size(49, 20);
             label4.TabIndex = 10;
             label4.Text = "User : ";
+            // 
+            // btn_Xem
+            // 
+            btn_Xem.Location = new Point(854, 697);
+            btn_Xem.Name = "btn_Xem";
+            btn_Xem.Size = new Size(94, 46);
+            btn_Xem.TabIndex = 11;
+            btn_Xem.Text = "Xem";
+            btn_Xem.UseVisualStyleBackColor = true;
+            btn_Xem.Click += btn_Xem_Click;
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(btnAdd);
+            groupBox2.Controls.Add(label3);
+            groupBox2.Controls.Add(label2);
+            groupBox2.Controls.Add(textBox2);
+            groupBox2.Controls.Add(textBox1);
+            groupBox2.Location = new Point(663, 62);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(383, 186);
+            groupBox2.TabIndex = 14;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Sản phẩm";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(119, 35);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(179, 27);
+            textBox1.TabIndex = 0;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(119, 88);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(179, 27);
+            textBox2.TabIndex = 1;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(6, 38);
+            label2.Name = "label2";
+            label2.Size = new Size(98, 20);
+            label2.TabIndex = 2;
+            label2.Text = "Mã sản phẩm";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(6, 91);
+            label3.Name = "label3";
+            label3.Size = new Size(69, 20);
+            label3.TabIndex = 3;
+            label3.Text = "Số lượng";
+            // 
+            // btnAdd
+            // 
+            btnAdd.Location = new Point(266, 137);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(95, 43);
+            btnAdd.TabIndex = 4;
+            btnAdd.Text = "Thêm";
+            btnAdd.UseVisualStyleBackColor = true;
             // 
             // QLDoiHang
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1142, 755);
+            Controls.Add(groupBox2);
+            Controls.Add(btn_Xem);
             Controls.Add(label4);
             Controls.Add(btn_Exits);
             Controls.Add(groupBox3);
-            Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(gbMenu);
             Controls.Add(btnDoiTra);
@@ -318,10 +282,10 @@
             gbMenu.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
             groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgv_DoiTra).EndInit();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -333,25 +297,21 @@
         private Label btnDoiTra;
         private GroupBox gbMenu;
         private GroupBox groupBox1;
-        private GroupBox groupBox2;
-        private TextBox txtSoLuongDoi;
-        private TextBox txtMaSP;
-        private Label label7;
-        private Label label6;
         private Button btnQLSanPham;
         private Button btnQLHoaDon;
-        private Button btn_Doi;
         private GroupBox groupBox3;
         private DataGridView dgv_DoiTra;
         private Button btn_Exits;
         private Button button1;
         private Button btnKhuyenMai;
         private Button btnQLNhanVien;
-        private ListBox hoadon;
-        private ListBox lb_thongtinhoadon;
-        private Label label2;
-        private TextBox textBox1;
-        private Button btn_Tra;
         private Label label4;
+        private Button btn_Xem;
+        private GroupBox groupBox2;
+        private Button btnAdd;
+        private Label label3;
+        private Label label2;
+        private TextBox textBox2;
+        private TextBox textBox1;
     }
 }

@@ -47,16 +47,54 @@ namespace PRL.View
             label4.Text = "User : " + userName;
         }
 
-        private void hoadon_SelectedIndexChanged(object sender, EventArgs e)
+        private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            if(txtSearch.Text.Length <= 0|| txtSearch.Text==null)
+            if (txtSearch.Text.Trim().Length < 0 || txtSearch.Text == null)
             {
                 LoadDaTa(null);
+
             }
             else
             {
                 LoadDaTa(txtSearch.Text);
             }
+
+        }
+
+        private void btn_Xem_Click(object sender, EventArgs e)
+        {
+            HoaDon hoaDon = new HoaDon();
+            hoaDon.ShowDialog();
+        }
+
+        private void btn_Exits_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnQLHoaDon_Click(object sender, EventArgs e)
+        {
+            HoaDon hoaDon = new HoaDon();
+            hoaDon.ShowDialog();
+        }
+
+        private void btnQLSanPham_Click(object sender, EventArgs e)
+        {
+            QLSanPham qLSanPham = new QLSanPham();
+            qLSanPham.ShowDialog();
+        }
+
+        private void btnKhuyenMai_Click(object sender, EventArgs e)
+        {
+            QLKhuyenMai qLKhuyenMai = new QLKhuyenMai();
+            qLKhuyenMai.ShowDialog();
+
+        }
+        
+        private void btnQLNhanVien_Click(object sender, EventArgs e)
+        {
+            QLNhanVien qLNhanVien = new QLNhanVien();
+            qLNhanVien.ShowDialog();
         }
     }
 }

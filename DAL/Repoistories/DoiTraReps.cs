@@ -20,7 +20,7 @@ namespace DAL.Repoistories
           return _qlBanGiay.HoaDonChiTiets.ToList();    
         }
 
-        public List<HoaDon> GetHoaDons(string find)
+        public List<HoaDon> GetHoaDons()
         {
             return _qlBanGiay.HoaDons.ToList();
         }

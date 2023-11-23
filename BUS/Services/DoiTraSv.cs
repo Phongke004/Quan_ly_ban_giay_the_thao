@@ -24,7 +24,11 @@ namespace BUS.Services
 
         public List<HoaDon> GetHoaDons(string find)
         {
-         return _doiTraReps.GetHoaDons(find);
+            if(find == null)
+            {
+                return _doiTraReps.GetHoaDons();
+            }
+            return _doiTraReps.GetHoaDons().Where(x => x.MaHd.Trim().ToLower().Contains(find.ToLower())).ToList();
         }
     }
 }
