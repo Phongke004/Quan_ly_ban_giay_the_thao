@@ -20,9 +20,9 @@ namespace PRL.View
             this.userName = userName;
             InitializeComponent();
             _doiTraServiec = new DoiTraSv();
-            LoadDaTa();
+            LoadDaTa(null);
         }
-        public void LoadDaTa()
+        public void LoadDaTa(string find)
         {
             dgv_DoiTra.Rows.Clear();
             int stt = 1;
@@ -35,7 +35,7 @@ namespace PRL.View
             dgv_DoiTra.Columns[5].Name = "Đơn giá";
             dgv_DoiTra.Columns[6].Name = "Số lượng";
             dgv_DoiTra.Columns[7].Name = "Ghi chú";
-            foreach (var item in _doiTraServiec.GetHoaDons())
+            foreach (var item in _doiTraServiec.GetHoaDons(find))
             {
                 var query = _doiTraServiec.GetHoaDonChiTiet().FirstOrDefault(x => x.MaHd == item.MaHd);
                 dgv_DoiTra.Rows.Add(stt++, item.MaHd, item.MaSp, item.MaNv, item.NgayTao, query.DonGia, query.SoLuong, query.GhiChu);
@@ -45,6 +45,18 @@ namespace PRL.View
         private void QLDoiHang_Load(object sender, EventArgs e)
         {
             label4.Text = "User : " + userName;
+        }
+
+        private void hoadon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(txtSearch.Text.Length <= 0|| txtSearch.Text==null)
+            {
+                LoadDaTa(null);
+            }
+            else
+            {
+                LoadDaTa(txtSearch.Text);
+            }
         }
     }
 }

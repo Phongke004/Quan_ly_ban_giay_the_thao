@@ -9,7 +9,7 @@ public partial class HoaDon
 
     public DateTime NgayTao { get; set; }
 
-    public bool TrangThai { get; set; }
+    public string TrangThai { get; set; }
 
     public double TongTien { get; set; }
 

@@ -26,7 +26,7 @@ namespace PRL.View
 
         private void btn_QLDoiTra_Click(object sender, EventArgs e)
         {
-            QLDoiHang qlDoiTra = new QLDoiHang(); 
+            QLDoiHang qlDoiTra = new QLDoiHang (userName); 
             qlDoiTra.ShowDialog();
         }
     }

@@ -9,7 +9,7 @@ namespace DAL.IRepoistories
 {
     public interface IDoiTraReps
     {
-        public List<HoaDon> GetHoaDons();
+        public List<HoaDon> GetHoaDons(string find);
         public List<HoaDonChiTiet> GetHoaDonChiTiet();
     }
 }
