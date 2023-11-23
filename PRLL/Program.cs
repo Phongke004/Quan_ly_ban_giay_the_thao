@@ -16,7 +16,7 @@ namespace PRLL
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             //Application.Run(new Login());
-            Application.Run(new Form1());
+            Application.Run(new QLNhanVien());
 
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace PRL.View
 {
-    partial class Form1
+    partial class QLNhanVien
     {
         /// <summary>
         /// Required designer variable.
@@ -144,7 +144,7 @@
             // 
             button9.Location = new Point(12, 262);
             button9.Name = "button9";
-            button9.Size = new Size(184, 47);
+            button9.Size = new Size(184, 53);
             button9.TabIndex = 4;
             button9.Text = "Quản lý nhân viên";
             button9.UseVisualStyleBackColor = true;
@@ -153,7 +153,7 @@
             // 
             button8.Location = new Point(12, 203);
             button8.Name = "button8";
-            button8.Size = new Size(184, 44);
+            button8.Size = new Size(184, 53);
             button8.TabIndex = 3;
             button8.Text = "Quản lý đổi trả";
             button8.UseVisualStyleBackColor = true;
@@ -162,7 +162,7 @@
             // 
             button7.Location = new Point(12, 143);
             button7.Name = "button7";
-            button7.Size = new Size(184, 54);
+            button7.Size = new Size(184, 53);
             button7.TabIndex = 2;
             button7.Text = "Quản lý khuyến mãi";
             button7.UseVisualStyleBackColor = true;
@@ -171,7 +171,7 @@
             // 
             button6.Location = new Point(12, 86);
             button6.Name = "button6";
-            button6.Size = new Size(184, 51);
+            button6.Size = new Size(184, 53);
             button6.TabIndex = 1;
             button6.Text = "Quản lý sản phẩm";
             button6.UseVisualStyleBackColor = true;
