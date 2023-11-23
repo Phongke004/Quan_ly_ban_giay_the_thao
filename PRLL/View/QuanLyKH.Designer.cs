@@ -137,21 +137,21 @@
             radioButton1.AutoSize = true;
             radioButton1.Location = new Point(173, 294);
             radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(117, 24);
+            radioButton1.Size = new Size(62, 24);
             radioButton1.TabIndex = 9;
             radioButton1.TabStop = true;
-            radioButton1.Text = "radioButton1";
+            radioButton1.Text = "Nam";
             radioButton1.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
             radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(313, 294);
+            radioButton2.Location = new Point(381, 292);
             radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(117, 24);
+            radioButton2.Size = new Size(49, 24);
             radioButton2.TabIndex = 10;
             radioButton2.TabStop = true;
-            radioButton2.Text = "radioButton2";
+            radioButton2.Text = "Nu";
             radioButton2.UseVisualStyleBackColor = true;
             // 
             // comboBox1
