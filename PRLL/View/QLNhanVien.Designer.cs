@@ -239,7 +239,7 @@
             // radioButton4
             // 
             radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(133, 11);
+            radioButton4.Location = new Point(118, 11);
             radioButton4.Name = "radioButton4";
             radioButton4.Size = new Size(52, 24);
             radioButton4.TabIndex = 26;
@@ -261,22 +261,23 @@
             radioButton1.AutoSize = true;
             radioButton1.Location = new Point(16, 11);
             radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(62, 24);
+            radioButton1.Size = new Size(63, 24);
             radioButton1.TabIndex = 23;
             radioButton1.TabStop = true;
-            radioButton1.Text = "Nam";
+            radioButton1.Text = "Male";
             radioButton1.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
             radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(135, 11);
+            radioButton2.Location = new Point(118, 11);
             radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(50, 24);
+            radioButton2.Size = new Size(78, 24);
             radioButton2.TabIndex = 24;
             radioButton2.TabStop = true;
-            radioButton2.Text = "Nữ";
+            radioButton2.Text = "Female";
             radioButton2.UseVisualStyleBackColor = true;
+            radioButton2.CheckedChanged += radioButton2_CheckedChanged;
             // 
             // dateTimePicker1
             // 
@@ -421,7 +422,7 @@
             label9.TabIndex = 9;
             label9.Text = "Danh Mục Nhân Viên";
             // 
-            // Form1
+            // QLNhanVien
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -430,7 +431,7 @@
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
-            Name = "Form1";
+            Name = "QLNhanVien";
             Text = "Quản Lý Nhân Viên";
             groupBox1.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
