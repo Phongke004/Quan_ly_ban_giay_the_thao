@@ -63,6 +63,16 @@ namespace PRL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chon_giay_the_thao_theo_vi_tri_choi_bong {
+            get {
+                object obj = ResourceManager.GetObject("chon-giay-the-thao-theo-vi-tri-choi-bong", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Hinh_anh_12_con_giap_Black_Robot_tuoi_Suu {
             get {
                 object obj = ResourceManager.GetObject("Hinh-anh-12-con-giap-Black-Robot-tuoi-Suu", resourceCulture);

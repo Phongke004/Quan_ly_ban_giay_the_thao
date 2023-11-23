@@ -38,27 +38,30 @@
             btnQLSanPham = new Button();
             btnQLHoaDon = new Button();
             groupBox1 = new GroupBox();
-            txtSoLuongMua = new TextBox();
-            txtPrice = new TextBox();
-            label5 = new Label();
-            label4 = new Label();
-            dtpNgayTao = new DateTimePicker();
-            label3 = new Label();
+            hoadon = new ListBox();
+            lb_thongtinhoadon = new ListBox();
             groupBox2 = new GroupBox();
-            btnThem = new Button();
+            btn_Tra = new Button();
+            label3 = new Label();
+            label2 = new Label();
+            rdb_Tra = new RadioButton();
+            rdb_Doi = new RadioButton();
+            textBox1 = new TextBox();
+            btn_Doi = new Button();
             txtSoLuongDoi = new TextBox();
             txtMaSP = new TextBox();
             label7 = new Label();
             label6 = new Label();
             groupBox3 = new GroupBox();
-            dataGridView1 = new DataGridView();
-            btnBack = new Button();
+            dgv_DoiTra = new DataGridView();
+            btn_Exits = new Button();
+            label4 = new Label();
             button1 = new Button();
             gbMenu.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgv_DoiTra).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -72,10 +75,10 @@
             // 
             // txtSearchSDTKH
             // 
-            txtSearchSDTKH.Location = new Point(112, 35);
+            txtSearchSDTKH.Location = new Point(22, 42);
             txtSearchSDTKH.Name = "txtSearchSDTKH";
             txtSearchSDTKH.PlaceholderText = "Vui lòng nhập mã hóa đơn";
-            txtSearchSDTKH.Size = new Size(250, 27);
+            txtSearchSDTKH.Size = new Size(367, 27);
             txtSearchSDTKH.TabIndex = 0;
             // 
             // label1
@@ -149,94 +152,118 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(txtSoLuongMua);
-            groupBox1.Controls.Add(txtPrice);
-            groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(dtpNgayTao);
-            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(hoadon);
+            groupBox1.Controls.Add(lb_thongtinhoadon);
             groupBox1.Controls.Add(txtSearchSDTKH);
             groupBox1.Location = new Point(286, 62);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(415, 234);
+            groupBox1.Size = new Size(415, 293);
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin hóa đơn";
             // 
-            // txtSoLuongMua
+            // hoadon
             // 
-            txtSoLuongMua.Location = new Point(112, 171);
-            txtSoLuongMua.Name = "txtSoLuongMua";
-            txtSoLuongMua.Size = new Size(250, 27);
-            txtSoLuongMua.TabIndex = 6;
+            hoadon.FormattingEnabled = true;
+            hoadon.ItemHeight = 20;
+            hoadon.Location = new Point(22, 82);
+            hoadon.Name = "hoadon";
+            hoadon.Size = new Size(367, 184);
+            hoadon.TabIndex = 2;
             // 
-            // txtPrice
+            // lb_thongtinhoadon
             // 
-            txtPrice.Location = new Point(112, 126);
-            txtPrice.Name = "txtPrice";
-            txtPrice.Size = new Size(250, 27);
-            txtPrice.TabIndex = 5;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(16, 178);
-            label5.Name = "label5";
-            label5.Size = new Size(72, 20);
-            label5.TabIndex = 4;
-            label5.Text = "Số Lượng";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(16, 133);
-            label4.Name = "label4";
-            label4.Size = new Size(31, 20);
-            label4.TabIndex = 3;
-            label4.Text = "Giá";
-            // 
-            // dtpNgayTao
-            // 
-            dtpNgayTao.Cursor = Cursors.AppStarting;
-            dtpNgayTao.CustomFormat = "dd/MM/yyyy";
-            dtpNgayTao.Format = DateTimePickerFormat.Short;
-            dtpNgayTao.Location = new Point(112, 80);
-            dtpNgayTao.Name = "dtpNgayTao";
-            dtpNgayTao.Size = new Size(250, 27);
-            dtpNgayTao.TabIndex = 2;
-            dtpNgayTao.Value = new DateTime(2023, 11, 7, 0, 0, 0, 0);
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(16, 85);
-            label3.Name = "label3";
-            label3.Size = new Size(70, 20);
-            label3.TabIndex = 1;
-            label3.Text = "Ngày tạo";
+            lb_thongtinhoadon.FormattingEnabled = true;
+            lb_thongtinhoadon.ItemHeight = 20;
+            lb_thongtinhoadon.Location = new Point(528, 87);
+            lb_thongtinhoadon.Name = "lb_thongtinhoadon";
+            lb_thongtinhoadon.Size = new Size(367, 184);
+            lb_thongtinhoadon.TabIndex = 1;
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(btnThem);
+            groupBox2.Controls.Add(btn_Tra);
+            groupBox2.Controls.Add(label3);
+            groupBox2.Controls.Add(label2);
+            groupBox2.Controls.Add(rdb_Tra);
+            groupBox2.Controls.Add(rdb_Doi);
+            groupBox2.Controls.Add(textBox1);
+            groupBox2.Controls.Add(btn_Doi);
             groupBox2.Controls.Add(txtSoLuongDoi);
             groupBox2.Controls.Add(txtMaSP);
             groupBox2.Controls.Add(label7);
             groupBox2.Controls.Add(label6);
             groupBox2.Location = new Point(720, 62);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(410, 234);
+            groupBox2.Size = new Size(410, 293);
             groupBox2.TabIndex = 7;
             groupBox2.TabStop = false;
             groupBox2.Text = "Sản phẩm";
             // 
-            // btnThem
+            // btn_Tra
             // 
-            btnThem.Location = new Point(173, 126);
-            btnThem.Name = "btnThem";
-            btnThem.Size = new Size(106, 43);
-            btnThem.TabIndex = 9;
-            btnThem.Text = "Thêm";
-            btnThem.UseVisualStyleBackColor = true;
+            btn_Tra.Location = new Point(187, 228);
+            btn_Tra.Name = "btn_Tra";
+            btn_Tra.Size = new Size(106, 43);
+            btn_Tra.TabIndex = 15;
+            btn_Tra.Text = "Trả";
+            btn_Tra.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(19, 182);
+            label3.Name = "label3";
+            label3.Size = new Size(73, 20);
+            label3.TabIndex = 14;
+            label3.Text = "Hình thức";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(19, 133);
+            label2.Name = "label2";
+            label2.Size = new Size(31, 20);
+            label2.TabIndex = 13;
+            label2.Text = "Giá";
+            // 
+            // rdb_Tra
+            // 
+            rdb_Tra.AutoSize = true;
+            rdb_Tra.Location = new Point(272, 182);
+            rdb_Tra.Name = "rdb_Tra";
+            rdb_Tra.Size = new Size(50, 24);
+            rdb_Tra.TabIndex = 12;
+            rdb_Tra.TabStop = true;
+            rdb_Tra.Text = "Trả";
+            rdb_Tra.UseVisualStyleBackColor = true;
+            // 
+            // rdb_Doi
+            // 
+            rdb_Doi.AutoSize = true;
+            rdb_Doi.Location = new Point(124, 182);
+            rdb_Doi.Name = "rdb_Doi";
+            rdb_Doi.Size = new Size(58, 24);
+            rdb_Doi.TabIndex = 11;
+            rdb_Doi.TabStop = true;
+            rdb_Doi.Text = "Đổi ";
+            rdb_Doi.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(123, 126);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(199, 27);
+            textBox1.TabIndex = 10;
+            // 
+            // btn_Doi
+            // 
+            btn_Doi.Location = new Point(44, 228);
+            btn_Doi.Name = "btn_Doi";
+            btn_Doi.Size = new Size(106, 43);
+            btn_Doi.TabIndex = 9;
+            btn_Doi.Text = "Đổi";
+            btn_Doi.UseVisualStyleBackColor = true;
             // 
             // txtSoLuongDoi
             // 
@@ -272,7 +299,7 @@
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(dataGridView1);
+            groupBox3.Controls.Add(dgv_DoiTra);
             groupBox3.Location = new Point(292, 361);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(813, 330);
@@ -280,31 +307,41 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "Danh Sách Hóa Đơn";
             // 
-            // dataGridView1
+            // dgv_DoiTra
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(34, 38);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(748, 247);
-            dataGridView1.TabIndex = 0;
+            dgv_DoiTra.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgv_DoiTra.Location = new Point(34, 38);
+            dgv_DoiTra.Name = "dgv_DoiTra";
+            dgv_DoiTra.RowHeadersWidth = 51;
+            dgv_DoiTra.RowTemplate.Height = 29;
+            dgv_DoiTra.Size = new Size(748, 247);
+            dgv_DoiTra.TabIndex = 0;
             // 
-            // btnBack
+            // btn_Exits
             // 
-            btnBack.Location = new Point(980, 697);
-            btnBack.Name = "btnBack";
-            btnBack.Size = new Size(94, 46);
-            btnBack.TabIndex = 9;
-            btnBack.Text = "Back";
-            btnBack.UseVisualStyleBackColor = true;
+            btn_Exits.Location = new Point(980, 697);
+            btn_Exits.Name = "btn_Exits";
+            btn_Exits.Size = new Size(94, 46);
+            btn_Exits.TabIndex = 9;
+            btn_Exits.Text = "Exits";
+            btn_Exits.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(939, 26);
+            label4.Name = "label4";
+            label4.Size = new Size(49, 20);
+            label4.TabIndex = 10;
+            label4.Text = "User : ";
             // 
             // QLDoiHang
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1142, 755);
-            Controls.Add(btnBack);
+            Controls.Add(label4);
+            Controls.Add(btn_Exits);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
@@ -313,13 +350,14 @@
             Controls.Add(label1);
             Name = "QLDoiHang";
             Text = "QLDoiHang";
+            Load += QLDoiHang_Load;
             gbMenu.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgv_DoiTra).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -331,12 +369,6 @@
         private Label btnDoiTra;
         private GroupBox gbMenu;
         private GroupBox groupBox1;
-        private Label label4;
-        private DateTimePicker dtpNgayTao;
-        private Label label3;
-        private TextBox txtSoLuongMua;
-        private TextBox txtPrice;
-        private Label label5;
         private GroupBox groupBox2;
         private TextBox txtSoLuongDoi;
         private TextBox txtMaSP;
@@ -344,12 +376,21 @@
         private Label label6;
         private Button btnQLSanPham;
         private Button btnQLHoaDon;
-        private Button btnThem;
+        private Button btn_Doi;
         private GroupBox groupBox3;
-        private DataGridView dataGridView1;
-        private Button btnBack;
+        private DataGridView dgv_DoiTra;
+        private Button btn_Exits;
         private Button button1;
         private Button btnKhuyenMai;
         private Button btnQLNhanVien;
+        private ListBox hoadon;
+        private ListBox lb_thongtinhoadon;
+        private Label label3;
+        private Label label2;
+        private RadioButton rdb_Tra;
+        private RadioButton rdb_Doi;
+        private TextBox textBox1;
+        private Button btn_Tra;
+        private Label label4;
     }
 }
