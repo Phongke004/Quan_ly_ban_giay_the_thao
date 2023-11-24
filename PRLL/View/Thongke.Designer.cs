@@ -28,18 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             groupBox1 = new GroupBox();
             textBox5 = new TextBox();
-            textBox2 = new TextBox();
-            label6 = new Label();
-            label5 = new Label();
             dateTimePicker1 = new DateTimePicker();
-            textBox4 = new TextBox();
+            textBox2 = new TextBox();
             textBox3 = new TextBox();
+            label6 = new Label();
             textBox1 = new TextBox();
-            label4 = new Label();
+            label5 = new Label();
+            textBox4 = new TextBox();
             label3 = new Label();
+            label4 = new Label();
             label2 = new Label();
             label1 = new Label();
             groupBox2 = new GroupBox();
@@ -67,106 +66,106 @@
             // groupBox1
             // 
             groupBox1.Controls.Add(textBox5);
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(dateTimePicker1);
-            groupBox1.Controls.Add(textBox4);
+            groupBox1.Controls.Add(textBox2);
             groupBox1.Controls.Add(textBox3);
+            groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(textBox1);
-            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Controls.Add(textBox4);
             groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
             groupBox1.Location = new Point(302, 41);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(399, 345);
+            groupBox1.Size = new Size(617, 274);
             groupBox1.TabIndex = 18;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin";
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(120, 293);
+            textBox5.Location = new Point(420, 187);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(250, 27);
-            textBox5.TabIndex = 29;
+            textBox5.Size = new Size(182, 27);
+            textBox5.TabIndex = 35;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(105, 126);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(193, 27);
+            dateTimePicker1.TabIndex = 25;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(120, 248);
+            textBox2.Location = new Point(420, 123);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(250, 27);
-            textBox2.TabIndex = 28;
+            textBox2.Size = new Size(182, 27);
+            textBox2.TabIndex = 34;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(105, 182);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(193, 27);
+            textBox3.TabIndex = 23;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(28, 296);
+            label6.Location = new Point(328, 190);
             label6.Name = "label6";
             label6.Size = new Size(50, 20);
-            label6.TabIndex = 27;
+            label6.TabIndex = 33;
             label6.Text = "MaNV";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(104, 68);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(193, 27);
+            textBox1.TabIndex = 22;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(28, 248);
+            label5.Location = new Point(328, 133);
             label5.Name = "label5";
             label5.Size = new Size(52, 20);
-            label5.TabIndex = 26;
+            label5.TabIndex = 32;
             label5.Text = "MaHD";
-            // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Location = new Point(120, 84);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(250, 27);
-            dateTimePicker1.TabIndex = 25;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(120, 196);
+            textBox4.Location = new Point(420, 75);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(250, 27);
-            textBox4.TabIndex = 24;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(120, 137);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(250, 27);
-            textBox3.TabIndex = 23;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(120, 19);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(250, 27);
-            textBox1.TabIndex = 22;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(28, 199);
-            label4.Name = "label4";
-            label4.Size = new Size(67, 20);
-            label4.TabIndex = 21;
-            label4.Text = "SoLuong";
+            textBox4.Size = new Size(182, 27);
+            textBox4.TabIndex = 31;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(28, 140);
+            label3.Location = new Point(12, 185);
             label3.Name = "label3";
             label3.Size = new Size(77, 20);
             label3.TabIndex = 20;
             label3.Text = "DoanhThu";
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(328, 75);
+            label4.Name = "label4";
+            label4.Size = new Size(67, 20);
+            label4.TabIndex = 30;
+            label4.Text = "SoLuong";
+            // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(28, 85);
+            label2.Location = new Point(16, 126);
             label2.Name = "label2";
             label2.Size = new Size(61, 20);
             label2.TabIndex = 19;
@@ -175,7 +174,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(28, 26);
+            label1.Location = new Point(16, 75);
             label1.Name = "label1";
             label1.Size = new Size(47, 20);
             label1.TabIndex = 18;
@@ -187,9 +186,9 @@
             groupBox2.Controls.Add(button3);
             groupBox2.Controls.Add(button2);
             groupBox2.Controls.Add(button1);
-            groupBox2.Location = new Point(743, 44);
+            groupBox2.Location = new Point(925, 41);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(250, 339);
+            groupBox2.Size = new Size(250, 274);
             groupBox2.TabIndex = 19;
             groupBox2.TabStop = false;
             groupBox2.Text = "Chức năng";
@@ -197,38 +196,38 @@
             // 
             // button4
             // 
-            button4.Location = new Point(78, 241);
+            button4.Location = new Point(78, 215);
             button4.Name = "button4";
             button4.Size = new Size(94, 29);
             button4.TabIndex = 16;
-            button4.Text = "Hien thi";
+            button4.Text = "Hiển thị";
             button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            button3.Location = new Point(78, 178);
+            button3.Location = new Point(78, 161);
             button3.Name = "button3";
             button3.Size = new Size(94, 29);
             button3.TabIndex = 15;
-            button3.Text = "Xoa";
+            button3.Text = "Xóa";
             button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Location = new Point(78, 127);
+            button2.Location = new Point(78, 107);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 14;
-            button2.Text = "Sua";
+            button2.Text = "Sửa";
             button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            button1.Location = new Point(78, 68);
+            button1.Location = new Point(78, 52);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 13;
-            button1.Text = "Them";
+            button1.Text = "Thêm";
             button1.UseVisualStyleBackColor = true;
             // 
             // groupBox3
@@ -239,16 +238,16 @@
             groupBox3.Controls.Add(button7);
             groupBox3.Controls.Add(button6);
             groupBox3.Controls.Add(button5);
-            groupBox3.Location = new Point(4, 47);
+            groupBox3.Location = new Point(12, 41);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(250, 339);
+            groupBox3.Size = new Size(250, 499);
             groupBox3.TabIndex = 20;
             groupBox3.TabStop = false;
             groupBox3.Text = "MeNu";
             // 
             // button10
             // 
-            button10.Location = new Point(35, 276);
+            button10.Location = new Point(35, 399);
             button10.Name = "button10";
             button10.Size = new Size(194, 29);
             button10.TabIndex = 5;
@@ -257,7 +256,7 @@
             // 
             // button9
             // 
-            button9.Location = new Point(35, 228);
+            button9.Location = new Point(35, 324);
             button9.Name = "button9";
             button9.Size = new Size(194, 29);
             button9.TabIndex = 4;
@@ -266,7 +265,7 @@
             // 
             // button8
             // 
-            button8.Location = new Point(35, 179);
+            button8.Location = new Point(35, 254);
             button8.Name = "button8";
             button8.Size = new Size(194, 29);
             button8.TabIndex = 3;
@@ -275,7 +274,7 @@
             // 
             // button7
             // 
-            button7.Location = new Point(35, 128);
+            button7.Location = new Point(35, 184);
             button7.Name = "button7";
             button7.Size = new Size(194, 29);
             button7.TabIndex = 2;
@@ -284,7 +283,7 @@
             // 
             // button6
             // 
-            button6.Location = new Point(35, 83);
+            button6.Location = new Point(35, 115);
             button6.Name = "button6";
             button6.Size = new Size(194, 29);
             button6.TabIndex = 1;
@@ -293,7 +292,7 @@
             // 
             // button5
             // 
-            button5.Location = new Point(35, 36);
+            button5.Location = new Point(35, 46);
             button5.Name = "button5";
             button5.Size = new Size(194, 29);
             button5.TabIndex = 0;
@@ -303,9 +302,9 @@
             // groupBox4
             // 
             groupBox4.Controls.Add(dataGridView1);
-            groupBox4.Location = new Point(12, 400);
+            groupBox4.Location = new Point(302, 321);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(1012, 222);
+            groupBox4.Size = new Size(873, 222);
             groupBox4.TabIndex = 21;
             groupBox4.TabStop = false;
             groupBox4.Text = "Hiển thị";
@@ -313,19 +312,19 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(27, 26);
+            dataGridView1.Location = new Point(17, 28);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(961, 196);
-            dataGridView1.TabIndex = 9;
+            dataGridView1.Size = new Size(850, 188);
+            dataGridView1.TabIndex = 0;
             // 
             // btnDoiTra
             // 
             btnDoiTra.AutoSize = true;
             btnDoiTra.Cursor = Cursors.Cross;
             btnDoiTra.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            btnDoiTra.Location = new Point(449, -3);
+            btnDoiTra.Location = new Point(532, -3);
             btnDoiTra.Name = "btnDoiTra";
             btnDoiTra.Size = new Size(150, 41);
             btnDoiTra.TabIndex = 10;
@@ -335,7 +334,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1036, 634);
+            ClientSize = new Size(1187, 555);
             Controls.Add(btnDoiTra);
             Controls.Add(groupBox4);
             Controls.Add(groupBox3);
@@ -354,18 +353,10 @@
         }
 
         #endregion
-
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private GroupBox groupBox1;
-        private TextBox textBox5;
-        private TextBox textBox2;
-        private Label label6;
-        private Label label5;
         private DateTimePicker dateTimePicker1;
-        private TextBox textBox4;
         private TextBox textBox3;
         private TextBox textBox1;
-        private Label label4;
         private Label label3;
         private Label label2;
         private Label label1;
@@ -376,7 +367,6 @@
         private Button button1;
         private GroupBox groupBox3;
         private GroupBox groupBox4;
-        private DataGridView dataGridView1;
         private Button button10;
         private Button button9;
         private Button button8;
@@ -384,5 +374,12 @@
         private Button button6;
         private Button button5;
         private Label btnDoiTra;
+        private TextBox textBox5;
+        private TextBox textBox2;
+        private Label label6;
+        private Label label5;
+        private TextBox textBox4;
+        private Label label4;
+        private DataGridView dataGridView1;
     }
 }
