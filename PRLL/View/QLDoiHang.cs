@@ -90,7 +90,7 @@ namespace PRL.View
             qLKhuyenMai.ShowDialog();
 
         }
-        
+
         private void btnQLNhanVien_Click(object sender, EventArgs e)
         {
             QLNhanVien qLNhanVien = new QLNhanVien();

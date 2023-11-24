@@ -33,10 +33,6 @@
             label1 = new Label();
             btnDoiTra = new Label();
             gbMenu = new GroupBox();
-            btnQLNhanVien = new Button();
-            btnKhuyenMai = new Button();
-            btnQLSanPham = new Button();
-            btnQLHoaDon = new Button();
             groupBox1 = new GroupBox();
             groupBox3 = new GroupBox();
             dgv_DoiTra = new DataGridView();
@@ -44,11 +40,15 @@
             label4 = new Label();
             btn_Xem = new Button();
             groupBox2 = new GroupBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            label2 = new Label();
-            label3 = new Label();
             btnAdd = new Button();
+            label3 = new Label();
+            label2 = new Label();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            btnQLHoaDon = new Button();
+            btnQLSanPham = new Button();
+            btnKhuyenMai = new Button();
+            btnQLNhanVien = new Button();
             button1 = new Button();
             gbMenu.SuspendLayout();
             groupBox1.SuspendLayout();
@@ -56,15 +56,6 @@
             ((System.ComponentModel.ISupportInitialize)dgv_DoiTra).BeginInit();
             groupBox2.SuspendLayout();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.Location = new Point(21, 297);
-            button1.Name = "button1";
-            button1.Size = new Size(209, 54);
-            button1.TabIndex = 10;
-            button1.Text = "Quản lý Đổi Trả";
-            button1.UseVisualStyleBackColor = true;
             // 
             // txtSearch
             // 
@@ -107,46 +98,6 @@
             gbMenu.TabIndex = 5;
             gbMenu.TabStop = false;
             gbMenu.Text = "Menu";
-            // 
-            // btnQLNhanVien
-            // 
-            btnQLNhanVien.Location = new Point(21, 393);
-            btnQLNhanVien.Name = "btnQLNhanVien";
-            btnQLNhanVien.Size = new Size(209, 54);
-            btnQLNhanVien.TabIndex = 11;
-            btnQLNhanVien.Text = "Quản lý Nhân Viên";
-            btnQLNhanVien.UseVisualStyleBackColor = true;
-            btnQLNhanVien.Click += btnQLNhanVien_Click;
-            // 
-            // btnKhuyenMai
-            // 
-            btnKhuyenMai.Location = new Point(21, 213);
-            btnKhuyenMai.Name = "btnKhuyenMai";
-            btnKhuyenMai.Size = new Size(209, 54);
-            btnKhuyenMai.TabIndex = 2;
-            btnKhuyenMai.Text = "Quản lý Khuyến Mại";
-            btnKhuyenMai.UseVisualStyleBackColor = true;
-            btnKhuyenMai.Click += btnKhuyenMai_Click;
-            // 
-            // btnQLSanPham
-            // 
-            btnQLSanPham.Location = new Point(21, 133);
-            btnQLSanPham.Name = "btnQLSanPham";
-            btnQLSanPham.Size = new Size(209, 54);
-            btnQLSanPham.TabIndex = 1;
-            btnQLSanPham.Text = "Quản lý Sản Phẩm";
-            btnQLSanPham.UseVisualStyleBackColor = true;
-            btnQLSanPham.Click += btnQLSanPham_Click;
-            // 
-            // btnQLHoaDon
-            // 
-            btnQLHoaDon.Location = new Point(21, 54);
-            btnQLHoaDon.Name = "btnQLHoaDon";
-            btnQLHoaDon.Size = new Size(209, 54);
-            btnQLHoaDon.TabIndex = 0;
-            btnQLHoaDon.Text = "Quản lý Hóa Đơn";
-            btnQLHoaDon.UseVisualStyleBackColor = true;
-            btnQLHoaDon.Click += btnQLHoaDon_Click;
             // 
             // groupBox1
             // 
@@ -221,28 +172,14 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Sản phẩm";
             // 
-            // textBox1
+            // btnAdd
             // 
-            textBox1.Location = new Point(119, 35);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(179, 27);
-            textBox1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(119, 88);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(179, 27);
-            textBox2.TabIndex = 1;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(6, 38);
-            label2.Name = "label2";
-            label2.Size = new Size(98, 20);
-            label2.TabIndex = 2;
-            label2.Text = "Mã sản phẩm";
+            btnAdd.Location = new Point(266, 137);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(95, 43);
+            btnAdd.TabIndex = 4;
+            btnAdd.Text = "Thêm";
+            btnAdd.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -253,14 +190,77 @@
             label3.TabIndex = 3;
             label3.Text = "Số lượng";
             // 
-            // btnAdd
+            // label2
             // 
-            btnAdd.Location = new Point(266, 137);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(95, 43);
-            btnAdd.TabIndex = 4;
-            btnAdd.Text = "Thêm";
-            btnAdd.UseVisualStyleBackColor = true;
+            label2.AutoSize = true;
+            label2.Location = new Point(6, 38);
+            label2.Name = "label2";
+            label2.Size = new Size(98, 20);
+            label2.TabIndex = 2;
+            label2.Text = "Mã sản phẩm";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(119, 88);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(179, 27);
+            textBox2.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(119, 35);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(179, 27);
+            textBox1.TabIndex = 0;
+            // 
+            // btnQLHoaDon
+            // 
+            btnQLHoaDon.Location = new Point(21, 54);
+            btnQLHoaDon.Name = "btnQLHoaDon";
+            btnQLHoaDon.Size = new Size(209, 54);
+            btnQLHoaDon.TabIndex = 0;
+            btnQLHoaDon.Text = "Quản lý Hóa Đơn";
+            btnQLHoaDon.UseVisualStyleBackColor = true;
+            btnQLHoaDon.Click += btnQLHoaDon_Click;
+            // 
+            // btnQLSanPham
+            // 
+            btnQLSanPham.Location = new Point(21, 133);
+            btnQLSanPham.Name = "btnQLSanPham";
+            btnQLSanPham.Size = new Size(209, 54);
+            btnQLSanPham.TabIndex = 1;
+            btnQLSanPham.Text = "Quản lý Sản Phẩm";
+            btnQLSanPham.UseVisualStyleBackColor = true;
+            btnQLSanPham.Click += btnQLSanPham_Click;
+            // 
+            // btnKhuyenMai
+            // 
+            btnKhuyenMai.Location = new Point(21, 213);
+            btnKhuyenMai.Name = "btnKhuyenMai";
+            btnKhuyenMai.Size = new Size(209, 54);
+            btnKhuyenMai.TabIndex = 2;
+            btnKhuyenMai.Text = "Quản lý Khuyến Mại";
+            btnKhuyenMai.UseVisualStyleBackColor = true;
+            btnKhuyenMai.Click += btnKhuyenMai_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(21, 297);
+            button1.Name = "button1";
+            button1.Size = new Size(209, 54);
+            button1.TabIndex = 10;
+            button1.Text = "Quản lý Đổi Trả";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // btnQLNhanVien
+            // 
+            btnQLNhanVien.Location = new Point(21, 393);
+            btnQLNhanVien.Name = "btnQLNhanVien";
+            btnQLNhanVien.Size = new Size(209, 54);
+            btnQLNhanVien.TabIndex = 11;
+            btnQLNhanVien.Text = "Quản lý Nhân Viên";
+            btnQLNhanVien.UseVisualStyleBackColor = true;
+            btnQLNhanVien.Click += btnQLNhanVien_Click;
             // 
             // QLDoiHang
             // 
@@ -297,14 +297,9 @@
         private Label btnDoiTra;
         private GroupBox gbMenu;
         private GroupBox groupBox1;
-        private Button btnQLSanPham;
-        private Button btnQLHoaDon;
         private GroupBox groupBox3;
         private DataGridView dgv_DoiTra;
         private Button btn_Exits;
-        private Button button1;
-        private Button btnKhuyenMai;
-        private Button btnQLNhanVien;
         private Label label4;
         private Button btn_Xem;
         private GroupBox groupBox2;
@@ -313,5 +308,9 @@
         private Label label2;
         private TextBox textBox2;
         private TextBox textBox1;
+        private Button btnQLNhanVien;
+        private Button btnKhuyenMai;
+        private Button btnQLSanPham;
+        private Button btnQLHoaDon;
     }
 }
