@@ -10,16 +10,13 @@ using System.Windows.Forms;
 
 namespace PRL.View
 {
-    public partial class DoiMatKhau : Form
+    public partial class QuanLyKH : Form
     {
-        public DoiMatKhau()
+        public QuanLyKH()
         {
             InitializeComponent();
         }
 
-        private void btnDMK_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

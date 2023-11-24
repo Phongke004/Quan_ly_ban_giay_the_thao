@@ -16,5 +16,16 @@ namespace PRL.View
         {
             InitializeComponent();
         }
+
+        private void MenuQL_Load(object sender, EventArgs e)
+        {
+            label1.Text = "User : " + userName;
+        }
+
+        private void btn_QLDoiTra_Click(object sender, EventArgs e)
+        {
+            QLDoiHang qlDoiTra = new QLDoiHang (userName); 
+            qlDoiTra.ShowDialog();
+        }
     }
 }
