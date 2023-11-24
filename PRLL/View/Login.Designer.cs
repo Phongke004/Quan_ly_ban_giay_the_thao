@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             label1 = new Label();
             txtUser = new TextBox();
             label2 = new Label();
@@ -53,10 +54,9 @@
             // txtUser
             // 
             txtUser.BackColor = SystemColors.Info;
-            txtUser.Location = new Point(135, 81);
-            txtUser.Margin = new Padding(2);
+            txtUser.Location = new Point(250, 139);
             txtUser.Name = "txtUser";
-            txtUser.Size = new Size(236, 27);
+            txtUser.Size = new Size(381, 39);
             txtUser.TabIndex = 2;
             // 
             // label2
@@ -76,10 +76,9 @@
             // 
             txtPassword.BackColor = SystemColors.Info;
             txtPassword.ForeColor = Color.Black;
-            txtPassword.Location = new Point(135, 128);
-            txtPassword.Margin = new Padding(2);
+            txtPassword.Location = new Point(250, 214);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(236, 27);
+            txtPassword.Size = new Size(381, 39);
             txtPassword.TabIndex = 2;
             // 
             // label3
@@ -90,10 +89,9 @@
             label3.Cursor = Cursors.Hand;
             label3.Font = new Font("Sitka Display", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(154, 16);
-            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Location = new Point(250, 26);
             label3.Name = "label3";
-            label3.Size = new Size(161, 45);
+            label3.Size = new Size(256, 71);
             label3.TabIndex = 1;
             label3.Text = "Đăng Nhập";
             // 
@@ -106,7 +104,7 @@
             btnLogin.Location = new Point(88, 177);
             btnLogin.Margin = new Padding(2);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(108, 29);
+            btnLogin.Size = new Size(176, 46);
             btnLogin.TabIndex = 0;
             btnLogin.Text = "Đặng nhập";
             btnLogin.UseVisualStyleBackColor = false;
@@ -129,7 +127,7 @@
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(527, 282);
             Controls.Add(btnQmk);
@@ -139,10 +137,11 @@
             Controls.Add(label3);
             Controls.Add(label1);
             Controls.Add(btnLogin);
-            Margin = new Padding(2);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Login";
             Text = "Login";
             FormClosed += Login_FormClosed;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

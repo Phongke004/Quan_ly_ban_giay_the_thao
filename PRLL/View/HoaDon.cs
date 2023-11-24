@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PRLL.View;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +14,8 @@ namespace PRL.View
     public partial class HoaDon : Form
     {
         public bool isExit = true;
-        public event EventHandler logOut;
+    
+        private bool isExitApplication = false;
         public HoaDon()
         {
             InitializeComponent();
@@ -45,7 +47,27 @@ namespace PRL.View
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            logOut(this, new EventArgs()); //Hàm ủy thác
+           
+            try
+            {
+                Login login = new Login();
+                this.Hide();
+                login.ShowDialog();
+                if (login.DialogResult == DialogResult.Yes)
+                {
+                    isExitApplication = true;
+                    this.Close();
+                }
+                else
+                {
+                    this.Show();
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Đăng thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

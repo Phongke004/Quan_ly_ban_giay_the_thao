@@ -16,5 +16,10 @@ namespace PRL.View
         {
             InitializeComponent();
         }
+
+        private void btnDMK_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

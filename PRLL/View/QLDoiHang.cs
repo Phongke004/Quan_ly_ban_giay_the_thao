@@ -40,6 +40,7 @@ namespace PRL.View
                 var query = _doiTraServiec.GetHoaDonChiTiet().FirstOrDefault(x => x.MaHd == item.MaHd);
                 dgv_DoiTra.Rows.Add(stt++, item.MaHd, item.MaSp, item.MaNv, item.NgayTao, query.DonGia, query.SoLuong, query.GhiChu);
             }
+
         }
 
         private void QLDoiHang_Load(object sender, EventArgs e)
@@ -82,6 +83,7 @@ namespace PRL.View
         {
             QLSanPham qLSanPham = new QLSanPham();
             qLSanPham.ShowDialog();
+
         }
 
         private void btnKhuyenMai_Click(object sender, EventArgs e)
@@ -89,12 +91,25 @@ namespace PRL.View
             QLKhuyenMai qLKhuyenMai = new QLKhuyenMai();
             qLKhuyenMai.ShowDialog();
 
+
+        private void hoadon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(txtSearch.Text.Length <= 0|| txtSearch.Text==null)
+            {
+                LoadDaTa(null);
+            }
+            else
+            {
+                LoadDaTa(txtSearch.Text);
+            }
+
         }
 
         private void btnQLNhanVien_Click(object sender, EventArgs e)
         {
             QLNhanVien qLNhanVien = new QLNhanVien();
             qLNhanVien.ShowDialog();
+
         }
     }
 }
