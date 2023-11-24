@@ -1,6 +1,10 @@
 ﻿using BUS.IServiecs;
+
 using DAL.Context;
 using DAL.DomainClass;
+
+using DAL.Models;
+
 using DAL.Repoistories;
 using System;
 using System.Collections.Generic;
@@ -20,12 +24,24 @@ namespace BUS.Services
         }
         public List<HoaDonChiTiet> GetHoaDonChiTiet()
         {
+
             return _doiTraReps.GetHoaDonChiTiet();
+
+           return _doiTraReps.GetHoaDonChiTiet();
+
         }
 
         public List<HoaDon> GetHoaDons(string find)
         {
+
             return _doiTraReps.GetHoaDons(find);
+
+            if(find == null)
+            {
+                return _doiTraReps.GetHoaDons();
+            }
+            return _doiTraReps.GetHoaDons().Where(x => x.MaHd.Trim().ToLower().Contains(find.ToLower())).ToList();
+
         }
     }
 }

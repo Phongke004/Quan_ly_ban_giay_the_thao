@@ -41,7 +41,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = SystemColors.ActiveCaption;
+            label1.BackColor = SystemColors.ButtonFace;
             label1.BorderStyle = BorderStyle.Fixed3D;
             label1.Font = new Font("Stencil", 10.125F, FontStyle.Italic, GraphicsUnit.Point);
             label1.Location = new Point(48, 88);
@@ -62,7 +62,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = SystemColors.ActiveCaption;
+            label2.BackColor = SystemColors.ButtonFace;
             label2.BorderStyle = BorderStyle.Fixed3D;
             label2.Font = new Font("Stencil", 10.125F, FontStyle.Italic, GraphicsUnit.Point);
             label2.Location = new Point(48, 135);

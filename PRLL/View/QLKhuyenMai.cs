@@ -10,14 +10,16 @@ using System.Windows.Forms;
 
 namespace PRL.View
 {
-    public partial class Thongke : Form
+    public partial class QLKhuyenMai : Form
     {
-        public Thongke()
+        public QLKhuyenMai()
         {
             InitializeComponent();
         }
 
-        private void groupBox2_Enter(object sender, EventArgs e)
+      
+
+        private void btnKhuyenMai_Click(object sender, EventArgs e)
         {
 
         }

@@ -111,7 +111,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(312, 59);
+            label5.Location = new Point(354, 63);
             label5.Name = "label5";
             label5.Size = new Size(63, 20);
             label5.TabIndex = 4;
@@ -120,7 +120,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(312, 23);
+            label6.Location = new Point(354, 26);
             label6.Name = "label6";
             label6.Size = new Size(58, 20);
             label6.TabIndex = 5;
@@ -222,29 +222,29 @@
             panel2.Controls.Add(radioButton4);
             panel2.Location = new Point(83, 181);
             panel2.Name = "panel2";
-            panel2.Size = new Size(201, 38);
+            panel2.Size = new Size(265, 38);
             panel2.TabIndex = 28;
             // 
             // radioButton3
             // 
             radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(16, 11);
+            radioButton3.Location = new Point(8, 11);
             radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(74, 24);
+            radioButton3.Size = new Size(104, 24);
             radioButton3.TabIndex = 25;
             radioButton3.TabStop = true;
-            radioButton3.Text = "Passed";
+            radioButton3.Text = "Hoạt Động";
             radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton4
             // 
             radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(118, 11);
+            radioButton4.Location = new Point(163, 11);
             radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(52, 24);
+            radioButton4.Size = new Size(99, 24);
             radioButton4.TabIndex = 26;
             radioButton4.TabStop = true;
-            radioButton4.Text = "Fail";
+            radioButton4.Text = "Không HĐ";
             radioButton4.UseVisualStyleBackColor = true;
             // 
             // panel1
@@ -253,43 +253,43 @@
             panel1.Controls.Add(radioButton2);
             panel1.Location = new Point(83, 132);
             panel1.Name = "panel1";
-            panel1.Size = new Size(199, 38);
+            panel1.Size = new Size(265, 38);
             panel1.TabIndex = 27;
             // 
             // radioButton1
             // 
             radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(16, 11);
+            radioButton1.Location = new Point(50, 11);
             radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(63, 24);
+            radioButton1.Size = new Size(62, 24);
             radioButton1.TabIndex = 23;
             radioButton1.TabStop = true;
-            radioButton1.Text = "Male";
+            radioButton1.Text = "Nam";
             radioButton1.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
             radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(118, 11);
+            radioButton2.Location = new Point(163, 8);
             radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(78, 24);
+            radioButton2.Size = new Size(50, 24);
             radioButton2.TabIndex = 24;
             radioButton2.TabStop = true;
-            radioButton2.Text = "Female";
+            radioButton2.Text = "Nữ";
             radioButton2.UseVisualStyleBackColor = true;
             radioButton2.CheckedChanged += radioButton2_CheckedChanged;
             // 
             // dateTimePicker1
             // 
             dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(381, 132);
+            dateTimePicker1.Location = new Point(429, 137);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(219, 27);
             dateTimePicker1.TabIndex = 22;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(381, 94);
+            textBox6.Location = new Point(429, 99);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(219, 27);
             textBox6.TabIndex = 21;
@@ -298,7 +298,7 @@
             // 
             textBox5.Location = new Point(83, 92);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(199, 27);
+            textBox5.Size = new Size(233, 27);
             textBox5.TabIndex = 20;
             // 
             // label10
@@ -312,64 +312,64 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(379, 59);
+            textBox4.Location = new Point(429, 61);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(221, 27);
             textBox4.TabIndex = 18;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(379, 23);
+            textBox3.Location = new Point(429, 23);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(221, 27);
             textBox3.TabIndex = 17;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(83, 56);
+            textBox2.Location = new Point(85, 56);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(199, 27);
+            textBox2.Size = new Size(231, 27);
             textBox2.TabIndex = 16;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(83, 23);
+            textBox1.Location = new Point(85, 23);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(201, 27);
+            textBox1.Size = new Size(231, 27);
             textBox1.TabIndex = 15;
             // 
             // button4
             // 
-            button4.Location = new Point(662, 177);
+            button4.Location = new Point(673, 202);
             button4.Name = "button4";
-            button4.Size = new Size(94, 29);
+            button4.Size = new Size(105, 53);
             button4.TabIndex = 14;
             button4.Text = "Show";
             button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            button3.Location = new Point(662, 124);
+            button3.Location = new Point(673, 138);
             button3.Name = "button3";
-            button3.Size = new Size(94, 29);
+            button3.Size = new Size(105, 53);
             button3.TabIndex = 13;
             button3.Text = "Xóa";
             button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Location = new Point(662, 73);
+            button2.Location = new Point(673, 79);
             button2.Name = "button2";
-            button2.Size = new Size(94, 29);
+            button2.Size = new Size(105, 53);
             button2.TabIndex = 12;
             button2.Text = "Sửa";
             button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            button1.Location = new Point(662, 26);
+            button1.Location = new Point(673, 20);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(105, 53);
             button1.TabIndex = 11;
             button1.Text = "Thêm ";
             button1.UseVisualStyleBackColor = true;
@@ -377,7 +377,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(301, 137);
+            label8.Location = new Point(354, 138);
             label8.Name = "label8";
             label8.Size = new Size(74, 20);
             label8.TabIndex = 10;
@@ -386,7 +386,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(312, 95);
+            label7.Location = new Point(354, 99);
             label7.Name = "label7";
             label7.Size = new Size(55, 20);
             label7.TabIndex = 9;

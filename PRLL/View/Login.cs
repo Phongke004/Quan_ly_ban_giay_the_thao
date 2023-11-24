@@ -77,6 +77,5 @@ namespace PRLL.View
         {
             System.Windows.Forms.Application.Exit();
         }
-
     }
 }

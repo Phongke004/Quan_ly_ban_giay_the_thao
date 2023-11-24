@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BUS.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +13,11 @@ namespace PRL.View
 {
     public partial class QLDoiHang : Form
     {
-        public QLDoiHang()
+        DoiTraSv _doiTraServiec;
+        string userName;
+        public QLDoiHang(string userName)
         {
+            this.userName = userName;
             InitializeComponent();
             _doiTraServiec = new DoiTraSv();
             LoadDaTa(null);
@@ -36,7 +40,56 @@ namespace PRL.View
                 var query = _doiTraServiec.GetHoaDonChiTiet().FirstOrDefault(x => x.MaHd == item.MaHd);
                 dgv_DoiTra.Rows.Add(stt++, item.MaHd, item.MaSp, item.MaNv, item.NgayTao, query.DonGia, query.SoLuong, query.GhiChu);
             }
+
         }
+
+        private void QLDoiHang_Load(object sender, EventArgs e)
+        {
+            label4.Text = "User : " + userName;
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (txtSearch.Text.Trim().Length < 0 || txtSearch.Text == null)
+            {
+                LoadDaTa(null);
+
+            }
+            else
+            {
+                LoadDaTa(txtSearch.Text);
+            }
+
+        }
+
+        private void btn_Xem_Click(object sender, EventArgs e)
+        {
+            HoaDon hoaDon = new HoaDon();
+            hoaDon.ShowDialog();
+        }
+
+        private void btn_Exits_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnQLHoaDon_Click(object sender, EventArgs e)
+        {
+            HoaDon hoaDon = new HoaDon();
+            hoaDon.ShowDialog();
+        }
+
+        private void btnQLSanPham_Click(object sender, EventArgs e)
+        {
+            QLSanPham qLSanPham = new QLSanPham();
+            qLSanPham.ShowDialog();
+
+        }
+
+        private void btnKhuyenMai_Click(object sender, EventArgs e)
+        {
+            QLKhuyenMai qLKhuyenMai = new QLKhuyenMai();
+            qLKhuyenMai.ShowDialog();
 
 
         private void hoadon_SelectedIndexChanged(object sender, EventArgs e)
@@ -49,6 +102,14 @@ namespace PRL.View
             {
                 LoadDaTa(txtSearch.Text);
             }
+
+        }
+
+        private void btnQLNhanVien_Click(object sender, EventArgs e)
+        {
+            QLNhanVien qLNhanVien = new QLNhanVien();
+            qLNhanVien.ShowDialog();
+
         }
     }
 }

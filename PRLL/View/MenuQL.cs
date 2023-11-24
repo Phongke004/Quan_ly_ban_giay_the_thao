@@ -12,8 +12,10 @@ namespace PRL.View
 {
     public partial class MenuQL : Form
     {
-        public MenuQL()
+        string userName;
+        public MenuQL(string userName)
         {
+            this.userName = userName;
             InitializeComponent();
         }
 
